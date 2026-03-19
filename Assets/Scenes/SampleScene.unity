@@ -774,7 +774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Terrain.TerrainDebug
   _gridDraw: 1
-  _defaultDurability: 1
+  _defaultDurability: 20
 --- !u!114 &2091699870
 MonoBehaviour:
   m_ObjectHideFlags: 0
