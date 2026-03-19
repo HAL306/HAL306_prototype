@@ -5,6 +5,7 @@ namespace Game.Terrain
 {
     [RequireComponent (typeof(TerrainContext))]
     [RequireComponent (typeof(TerrainPolygon))]
+    [RequireComponent (typeof(Rigidbody2D))]
     public class DivisibleTerrain : MonoBehaviour
     {
         private TerrainContext _terrainContext;     // 地形情報

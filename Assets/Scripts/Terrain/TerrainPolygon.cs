@@ -124,11 +124,11 @@ namespace Game.Terrain
             gridPos = new Vector2Int();
             TerrainGridData terrainGrid = _terrainContext.TerrainGrid;
 
-            for (int y = 0; y < terrainGrid.Height - 1; ++y)
+            for (int y = 0; y < terrainGrid.Height; ++y)
             {
                 bool lastCellSolid = false;
 
-                for (int x = 0; x < terrainGrid.Width - 1; ++x)
+                for (int x = 0; x < terrainGrid.Width; ++x)
                 {
                     // エッジがあるか判定
                     if (terrainGrid.Get(x, y).solid == lastCellSolid)
