@@ -1,19 +1,31 @@
+using System.Linq;
 using UnityEngine;
 
 namespace Game.Terrain
 {
     [RequireComponent (typeof(TerrainContext))]
     [RequireComponent (typeof(TerrainPolygon))]
+    [RequireComponent (typeof(Rigidbody2D))]
     public class DivisibleTerrain : MonoBehaviour
     {
-        private TerrainContext _terrainContext;     // ’nŒ`î•ñ
-        private TerrainPolygon _terrainPolygon;     // ’nŒ`‚Ìƒ|ƒŠƒSƒ“ƒf[ƒ^
+        private TerrainContext _terrainContext;     // åœ°å½¢æƒ…å ±
+        private TerrainPolygon _terrainPolygon;     // åœ°å½¢ã®ãƒãƒªã‚´ãƒ³ãƒ‡ãƒ¼ã‚¿
 
 
         private void Awake()
         {
             _terrainContext = GetComponent<TerrainContext>();
             _terrainPolygon = GetComponent<TerrainPolygon>();
+        }
+        
+        public void Initialize(TerrainGridData terrainGrid)
+        {
+            if (_terrainContext == null) _terrainContext = GetComponent<TerrainContext>();
+            if (_terrainPolygon == null) _terrainPolygon = GetComponent<TerrainPolygon>();
+
+            _terrainContext.TerrainGrid = terrainGrid;
+        
+            _terrainPolygon.OnGridChanged();
         }
 
         private void OnTriggerStay2D(Collider2D collider)
@@ -29,7 +41,7 @@ namespace Game.Terrain
                     if (terrainGrid.Get(x, y).solid == false)
                         continue;
 
-                    // ƒZƒ‹‚Ì’†S‚Ìƒ[ƒ‹ƒhÀ•W‚ğ‹‚ß‚é
+                    // ã‚»ãƒ«ã®ä¸­å¿ƒã®ãƒ¯ãƒ¼ãƒ«ãƒ‰åº§æ¨™ã‚’æ±‚ã‚ã‚‹
                     Vector2 center = new Vector2(x, y) * terrainGrid.GridScale;
                     center = transform.TransformPoint(center);
 
@@ -43,11 +55,11 @@ namespace Game.Terrain
 
         private bool HitCell(Collider2D collider, Vector2 center, float radius)
         {
-            // ”¼Œa‚ğl—¶‚µ‚È‚¢ƒqƒbƒg”»’è
+            // åŠå¾„ã‚’è€ƒæ…®ã—ãªã„ãƒ’ãƒƒãƒˆåˆ¤å®š
             if (collider.OverlapPoint(center))
                 return true;
 
-            // ”¼Œa‚ğl—¶‚µ‚½ƒqƒbƒg”»’è
+            // åŠå¾„ã‚’è€ƒæ…®ã—ãŸãƒ’ãƒƒãƒˆåˆ¤å®š
             Vector2 closest = collider.ClosestPoint(center);
 
             float dx = closest.x - center.x;
@@ -57,16 +69,68 @@ namespace Game.Terrain
         }
 
         private void DamegeCell(int x, int y, float damage)
-        {
-            ref GridCell refCell = ref _terrainContext.TerrainGrid.Get(x, y);
+    {
+        TerrainGridData terrainGrid = _terrainContext.TerrainGrid;
+        ref GridCell refCell = ref terrainGrid.Get(x, y);
 
-            refCell.durability -= damage;
-            if(refCell.durability <= 0.0f)
+        if (!refCell.solid) return;
+
+        refCell.durability -= damage;
+        
+        if (refCell.durability <= 0.0f)
+        {
+            var splitResults = TerrainSplitDetector.Instance.RemoveAndCheckSplit(terrainGrid, x, y);
+
+            if (splitResults.Count > 0)
             {
-                // ‘¶İ‚µ‚È‚¢ƒZƒ‹‚Æ‚µ‚Äˆµ‚¤
-                refCell.solid = false;
-                _terrainPolygon.OnGridChanged();
+                foreach (SplitResult result in splitResults)
+                {
+                    DivisibleTerrain newChunk = Instantiate(this);
+
+                    Vector3 localOffset = new Vector3(
+                        result.Offset.x * terrainGrid.GridScale,
+                        result.Offset.y * terrainGrid.GridScale,
+                        0f
+                    );
+                    
+                    newChunk.transform.position = this.transform.TransformPoint(localOffset);
+                    newChunk.transform.rotation = this.transform.rotation;
+
+                    if (TryGetComponent<Rigidbody2D>(out var rb) && newChunk.TryGetComponent<Rigidbody2D>(out var newRb))
+                    {
+                        newRb.linearVelocity = rb.linearVelocity; 
+                        newRb.angularVelocity = rb.angularVelocity;
+                    }
+
+                    if (newChunk.TryGetComponent<PolygonCollider2D>(out var col)) col.pathCount = 0;
+                    
+                    newChunk.Initialize(result.GridData);
+                }
+
+                Destroy(gameObject);
             }
+            else
+            {
+                if (CheckIfEmpty(terrainGrid))
+                {
+                    Destroy(gameObject);
+                }
+                else
+                {
+                    _terrainPolygon.OnGridChanged();
+                }
+            }
+        }
+    }
+        
+        private bool CheckIfEmpty(TerrainGridData grid)
+        {
+            GridCell[] rawCells = grid.RawCells;
+            for (int i = 0; i < rawCells.Length; i++)
+            {
+                if (rawCells[i].solid) return false;
+            }
+            return true;
         }
     }
 }
