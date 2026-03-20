@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Game.Terrain
@@ -10,6 +12,9 @@ namespace Game.Terrain
     {
         [SerializeField, Tooltip("グリッドの描画設定")]
         private bool _gridDraw = true;
+
+        [SerializeField, Tooltip("グリッド矩形の描画設定")]
+        private bool _gridDrawRect = true;
 
         [SerializeField, Tooltip("地形のデフォルト耐久値")]
         [Range(1.0f,100.0f)]
@@ -29,9 +34,19 @@ namespace Game.Terrain
             if (!Application.isPlaying)
                 return;
 
-            if (!_gridDraw)
-                return;
+            if (_gridDraw)
+            {
+                DrawGridCell();
+            }
 
+            if (_gridDrawRect)
+            {
+                DrawGridRect();
+            }
+        }
+
+        private void DrawGridCell()
+        {
             TerrainGridData terrainGrid = _terrainContext.TerrainGrid;
             if (terrainGrid == null)
                 return;
@@ -64,6 +79,31 @@ namespace Game.Terrain
                     Gizmos.DrawWireSphere(pos, terrainGrid.GridScale * 0.5f);
                 }
             }
+        }
+
+        private void DrawGridRect()
+        {
+            TerrainGridData terrainGrid = _terrainContext.TerrainGrid;
+            if (terrainGrid == null)
+                return;
+
+            Gizmos.color = Color.magenta;
+
+            float offset = -terrainGrid.GridScale * 0.5f;
+            float top = terrainGrid.Height * terrainGrid.GridScale + offset;
+            float bottom = offset;
+            float left = offset;
+            float right = terrainGrid.Width* terrainGrid.GridScale + offset;
+
+            Vector3 LT = transform.TransformPoint(new Vector3(left, top, 0.0f));
+            Vector3 LB = transform.TransformPoint(new Vector3(left, bottom, 0.0f));
+            Vector3 RT = transform.TransformPoint(new Vector3(right, top, 0.0f));
+            Vector3 RB = transform.TransformPoint(new Vector3(right, bottom, 0.0f));
+
+            Gizmos.DrawLine(LT, LB);
+            Gizmos.DrawLine(LB, RB);
+            Gizmos.DrawLine(RB, RT);
+            Gizmos.DrawLine(RT, LT);
         }
 
 
