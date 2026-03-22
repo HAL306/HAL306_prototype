@@ -33,6 +33,7 @@ namespace Game.Terrain
             if (terrainGrid == null)
                 return;
 
+            // 全てのセルに対して当たり判定をとる
             for (int y = 0; y < terrainGrid.Height; ++y)
             {
                 for (int x = 0; x < terrainGrid.Width; ++x)
@@ -44,6 +45,7 @@ namespace Game.Terrain
                     Vector2 center = new Vector2(x, y) * terrainGrid.GridScale;
                     center = transform.TransformPoint(center);
 
+                    // セルに対するダメージ判定
                     if (HitCell(collider, center, terrainGrid.GridScale * 0.5f))
                     {
                         DamegeCell(x, y, 1.0f);

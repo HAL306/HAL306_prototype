@@ -763,8 +763,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2, y: 2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -820,8 +820,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Terrain.TerrainDebug
   _gridDraw: 0
-  _gridDrawRect: 0
-  _defaultDurability: 25
+  _gridDrawRect: 1
+  _defaultDurability: 1
 --- !u!114 &2091699876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -879,7 +879,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6d0d5dcc943fc314daa6e770dcc993c9, type: 2}
+  - {fileID: 2100000, guid: 9ecf59ff145d41f41a68eb94b503fab3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
