@@ -5,7 +5,6 @@ namespace Game.Terrain
 {
     [RequireComponent (typeof(TerrainContext))]
     [RequireComponent (typeof(TerrainPolygon))]
-    [RequireComponent (typeof(Rigidbody2D))]
     public class DivisibleTerrain : MonoBehaviour
     {
         private TerrainContext _terrainContext;     // 地形情報
@@ -34,6 +33,7 @@ namespace Game.Terrain
             if (terrainGrid == null)
                 return;
 
+            // 全てのセルに対して当たり判定をとる
             for (int y = 0; y < terrainGrid.Height; ++y)
             {
                 for (int x = 0; x < terrainGrid.Width; ++x)
@@ -45,6 +45,7 @@ namespace Game.Terrain
                     Vector2 center = new Vector2(x, y) * terrainGrid.GridScale;
                     center = transform.TransformPoint(center);
 
+                    // セルに対するダメージ判定
                     if (HitCell(collider, center, terrainGrid.GridScale * 0.5f))
                     {
                         DamegeCell(x, y, 1.0f);
@@ -69,59 +70,59 @@ namespace Game.Terrain
         }
 
         private void DamegeCell(int x, int y, float damage)
-    {
-        TerrainGridData terrainGrid = _terrainContext.TerrainGrid;
-        ref GridCell refCell = ref terrainGrid.Get(x, y);
-
-        if (!refCell.solid) return;
-
-        refCell.durability -= damage;
-        
-        if (refCell.durability <= 0.0f)
         {
-            var splitResults = TerrainSplitDetector.Instance.RemoveAndCheckSplit(terrainGrid, x, y);
+            TerrainGridData terrainGrid = _terrainContext.TerrainGrid;
+            ref GridCell refCell = ref terrainGrid.Get(x, y);
 
-            if (splitResults.Count > 0)
+            if (!refCell.solid) return;
+
+            refCell.durability -= damage;
+            
+            if (refCell.durability <= 0.0f)
             {
-                foreach (SplitResult result in splitResults)
+                var splitResults = TerrainSplitDetector.Instance.RemoveAndCheckSplit(terrainGrid, x, y);
+
+                if (splitResults.Count > 0)
                 {
-                    DivisibleTerrain newChunk = Instantiate(this);
-
-                    Vector3 localOffset = new Vector3(
-                        result.Offset.x * terrainGrid.GridScale,
-                        result.Offset.y * terrainGrid.GridScale,
-                        0f
-                    );
-                    
-                    newChunk.transform.position = this.transform.TransformPoint(localOffset);
-                    newChunk.transform.rotation = this.transform.rotation;
-
-                    if (TryGetComponent<Rigidbody2D>(out var rb) && newChunk.TryGetComponent<Rigidbody2D>(out var newRb))
+                    foreach (SplitResult result in splitResults)
                     {
-                        newRb.linearVelocity = rb.linearVelocity; 
-                        newRb.angularVelocity = rb.angularVelocity;
+                        DivisibleTerrain newChunk = Instantiate(this);
+
+                        Vector3 localOffset = new Vector3(
+                            result.Offset.x * terrainGrid.GridScale,
+                            result.Offset.y * terrainGrid.GridScale,
+                            0f
+                        );
+                        
+                        newChunk.transform.position = this.transform.TransformPoint(localOffset);
+                        newChunk.transform.rotation = this.transform.rotation;
+
+                        if (TryGetComponent<Rigidbody2D>(out var rb) && newChunk.TryGetComponent<Rigidbody2D>(out var newRb))
+                        {
+                            newRb.linearVelocity = rb.linearVelocity; 
+                            newRb.angularVelocity = rb.angularVelocity;
+                        }
+
+                        if (newChunk.TryGetComponent<PolygonCollider2D>(out var col)) col.pathCount = 0;
+                        
+                        newChunk.Initialize(result.GridData);
                     }
 
-                    if (newChunk.TryGetComponent<PolygonCollider2D>(out var col)) col.pathCount = 0;
-                    
-                    newChunk.Initialize(result.GridData);
-                }
-
-                Destroy(gameObject);
-            }
-            else
-            {
-                if (CheckIfEmpty(terrainGrid))
-                {
                     Destroy(gameObject);
                 }
                 else
                 {
-                    _terrainPolygon.OnGridChanged();
+                    if (CheckIfEmpty(terrainGrid))
+                    {
+                        Destroy(gameObject);
+                    }
+                    else
+                    {
+                        _terrainPolygon.OnGridChanged();
+                    }
                 }
             }
         }
-    }
         
         private bool CheckIfEmpty(TerrainGridData grid)
         {
