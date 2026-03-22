@@ -97,6 +97,13 @@ namespace Game.Terrain
                         newChunk.transform.position = this.transform.TransformPoint(localOffset);
                         newChunk.transform.rotation = this.transform.rotation;
 
+                        if(newChunk.gameObject.TryGetComponent<MeshRenderer>(out var mr))
+                        {
+                            Vector2 offset = mr.material.GetVector("_TextureOffset");
+                            Debug.Log($"{offset}{localOffset}", gameObject);
+                            mr.material.SetVector("_TextureOffset", offset + (Vector2)localOffset);
+                        }
+
                         if (TryGetComponent<Rigidbody2D>(out var rb) && newChunk.TryGetComponent<Rigidbody2D>(out var newRb))
                         {
                             newRb.linearVelocity = rb.linearVelocity; 
