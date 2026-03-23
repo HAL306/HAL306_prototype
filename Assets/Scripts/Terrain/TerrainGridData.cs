@@ -3,15 +3,18 @@ using UnityEngine;
 
 namespace Game.Terrain
 {
+    // エディタの変更を保存する
+    [System.Serializable]
     public class TerrainGridData
     {
-        private GridCell[] _grid;   // グリッドデータ
+        // private変数を保存対象にする
+        [SerializeField] private GridCell[] _grid;   // グリッドデータ
 
-        private int _width;         // グリッドの幅
-        private int _height;        // グリッドの高さ
-        private float _gridScale;   // 1マスのサイズ
-        private int[] _visitedGen;
-        private int[] _visitedId;
+        [SerializeField] private int _width;         // グリッドの幅
+        [SerializeField] private int _height;        // グリッドの高さ
+        [SerializeField] float _gridScale;   // 1マスのサイズ
+        [SerializeField] int[] _visitedGen;
+        [SerializeField] int[] _visitedId;
 
         public int Width => _width;
         public int Height => _height;

@@ -12,6 +12,9 @@ public class CellMapEditor : Editor
 {
     public override void OnInspectorGUI()
     {
+        // 開いたエディタウィンドウ
+        TerrainEditorWindow window;
+
         // ターゲットとなるCellMapのインスタンスを取得
         TerrainContext map = (TerrainContext)target;
 
@@ -21,7 +24,7 @@ public class CellMapEditor : Editor
         if (GUILayout.Button("専用エディタを開く", GUILayout.Height(30)))
         {
             // 別ウィンドウを起動し、編集対象のmapデータを渡す
-            ColliderEditWindow.OpenWindow(map);
+            window = TerrainEditorWindow.OpenWindow(ref map);
         }
     }
 }

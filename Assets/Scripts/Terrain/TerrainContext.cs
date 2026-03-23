@@ -8,7 +8,7 @@ namespace Game.Terrain
     /// </summary>
     public class TerrainContext : MonoBehaviour
     {
-        private TerrainGridData _terrainGrid;       // 地形データ
+        [SerializeField] private TerrainGridData _terrainGrid;       // 地形データ
 
         public TerrainGridData TerrainGrid
         {
