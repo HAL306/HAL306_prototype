@@ -819,7 +819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ce25713dd411ff4989c93be3af47315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Terrain.TerrainDebug
-  _gridDraw: 0
+  _gridDraw: 1
   _gridDrawRect: 1
   _defaultDurability: 1
 --- !u!114 &2091699876
