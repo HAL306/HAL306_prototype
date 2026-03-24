@@ -10,6 +10,9 @@ namespace Game.Terrain
         private TerrainContext _terrainContext;     // 地形情報
         private TerrainPolygon _terrainPolygon;     // 地形のポリゴンデータ
 
+        [SerializeField]
+        private GameObject _effect;
+
 
         private void Awake()
         {
@@ -80,6 +83,9 @@ namespace Game.Terrain
             
             if (refCell.durability <= 0.0f)
             {
+                Vector3 effectPos = transform.TransformPoint(new Vector3(x, y, 0.0f) * terrainGrid.GridScale);
+                Instantiate(_effect, effectPos, Quaternion.identity);
+
                 var splitResults = TerrainSplitDetector.Instance.RemoveAndCheckSplit(terrainGrid, x, y);
 
                 if (splitResults.Count > 0)
