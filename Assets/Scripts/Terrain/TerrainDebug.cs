@@ -118,7 +118,7 @@ namespace Game.Terrain
                     GridCell cell = new GridCell();
                     if (x + y < 6 || x + y > 30)
                     {
-                        cell.solid = false;
+                        cell.solid = true;
                     }
                     else
                     {
