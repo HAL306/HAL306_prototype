@@ -16,6 +16,9 @@ namespace Game.Terrain
         [SerializeField, Tooltip("グリッド矩形の描画設定")]
         private bool _gridDrawRect = true;
 
+        [SerializeField, Tooltip("グリッド生成設定")]
+        private bool _gridCreate = false;
+
         [SerializeField, Tooltip("地形のデフォルト耐久値")]
         [Range(1.0f,100.0f)]
         private float _defaultDurability = 1.0f;
@@ -26,7 +29,11 @@ namespace Game.Terrain
         private void Awake()
         {
             _terrainContext = GetComponent<TerrainContext>();
-            CreateDebugGridData();
+
+            if(_gridCreate)
+            {
+                CreateDebugGridData();
+            }
         }
 
         private void OnDrawGizmos()
