@@ -821,6 +821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Game.Terrain.TerrainDebug
   _gridDraw: 1
   _gridDrawRect: 1
+  _gridCreate: 0
   _defaultDurability: 1
 --- !u!114 &2091699876
 MonoBehaviour:
@@ -967,6 +968,2658 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 855a4ef36ae8fac4dabbcc341446605b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Terrain.TerrainContext
+  _terrainGrid:
+    _grid:
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
+    _width: 23
+    _height: 23
+    _gridScale: 0.2
+    _visitedGen: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    _visitedId: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!50 &2091699882
 Rigidbody2D:
   serializedVersion: 5

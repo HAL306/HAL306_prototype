@@ -34,6 +34,11 @@ public class TerrainEditorWindow : EditorWindow
             cellPalette.Add(new GridCell { solid = false, isStatic = false, durability = 0, mass = 0 });   // 0: 消しゴム
             cellPalette.Add(new GridCell { solid = true, isStatic = false, durability = 1, mass = 1 });    // 1: 固定壁
         }
+
+        // 初期化
+        gridWidth = targetContext.TerrainGrid.Width;
+        gridHeight = targetContext.TerrainGrid.Height;
+        cellScale = targetContext.TerrainGrid.GridScale;
     }
 
     private void OnGUI()
@@ -63,9 +68,9 @@ public class TerrainEditorWindow : EditorWindow
         // 横並びにする
         EditorGUILayout.BeginHorizontal();
 
-        gridWidth = EditorGUILayout.IntField("Width", targetContext.TerrainGrid.Width);
-        gridHeight = EditorGUILayout.IntField("Height", targetContext.TerrainGrid.Height);
-        cellScale = EditorGUILayout.FloatField("Grid Scale", targetContext.TerrainGrid.GridScale);
+        gridWidth = EditorGUILayout.IntField("Width", gridWidth);
+        gridHeight = EditorGUILayout.IntField("Height", gridHeight);
+        cellScale = EditorGUILayout.FloatField("Grid Scale", cellScale);
         EditorGUILayout.EndHorizontal();
 
         if (GUILayout.Button("Initialize Grid"))
@@ -186,12 +191,13 @@ public class TerrainEditorWindow : EditorWindow
             {
                 for (int x = 0; x < grid.Width; x++)
                 {
-                    if (grid.Get(x, y).solid)
+                    // 可視化する領域の設定
+                    // グリッドデータは上下逆にする
+                    Rect fillRect = new Rect(texRect.x + x * cellWidth, texRect.y + texRect.height - (y + 1) * cellHeight, cellWidth, cellHeight);
+                    if (!grid.Get(x, y).solid)
                     {
-                        // 可視化する領域の設定
-                        // グリッドデータは上下逆にする
-                        Rect fillRect = new Rect(texRect.x + x * cellWidth, texRect.y + texRect.height - (y + 1) * cellHeight, cellWidth, cellHeight);
-                        EditorGUI.DrawRect(fillRect, new Color(1, 0, 0, 0.3f));
+                        // 塗られてない部分を灰色にする
+                        EditorGUI.DrawRect(fillRect, new Color(0.3f, 0.3f, 0.3f, 0.4f));
                     }
                 }
             }
