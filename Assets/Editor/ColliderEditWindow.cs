@@ -1,202 +1,257 @@
-using UnityEngine;
-using UnityEditor;
 using Game.Terrain;
+using UnityEditor;
+using UnityEngine;
+using UnityEditor.SceneManagement;
+using System.Collections.Generic;
 
 public class TerrainEditorWindow : EditorWindow
 {
     private TerrainContext targetContext;
-    private Vector2 leftScrollPos;
 
-    private int selectedX = -1;
-    private int selectedY = -1;
+    // パレット用のリストと状態管理
+    private List<GridCell> cellPalette = new List<GridCell>();
+    private int selectedCellIndex = 0;
+    private Vector2 paletteScrollPos; // パレットリストのスクロール位置
 
     // 初期化用
-    private int initWidth = 10;
-    private int initHeight = 10;
-    private float initScale = 1.0f;
+    private int gridWidth = 10;
+    private int gridHeight = 10;
+    private float cellScale = 0.2f;
 
     public static TerrainEditorWindow OpenWindow(ref TerrainContext context)
     {
-        TerrainEditorWindow window = GetWindow<TerrainEditorWindow>("Terrain Editor");
+        TerrainEditorWindow window = GetWindow<TerrainEditorWindow>("Terrain Palette Editor");
         window.targetContext = context;
         window.Show();
         return window;
     }
 
+    private void OnEnable()
+    {
+        // ウィンドウを開いた時に初期パレットを用意する
+        if (cellPalette.Count == 0)
+        {
+            cellPalette.Add(new GridCell { solid = false, isStatic = false, durability = 0, mass = 0 });   // 0: 消しゴム
+            cellPalette.Add(new GridCell { solid = true, isStatic = false, durability = 1, mass = 1 });    // 1: 固定壁
+        }
+    }
+
     private void OnGUI()
     {
-        // 編集対象のコンポーネントをセット
-        targetContext = (TerrainContext)EditorGUILayout.ObjectField("Target Terrain", targetContext, typeof(TerrainContext), true);
+        // グリッドの大きさ、セルの大きさのを入力するUI
+        DrawInitUI();
 
-        if (targetContext == null)
-        {
-            EditorGUILayout.HelpBox("TerrainContextがアタッチされたオブジェクトをセットしてください。", MessageType.Info);
-            return;
-        }
-
-        // --- 初期化されていない場合のUI ---
-        if (targetContext.TerrainGrid == null || targetContext.TerrainGrid.RawCells == null || targetContext.TerrainGrid.RawCells.Length == 0)
-        {
-            EditorGUILayout.LabelField("グリッドの初期化", EditorStyles.boldLabel);
-            initWidth = EditorGUILayout.IntField("Width", initWidth);
-            initHeight = EditorGUILayout.IntField("Height", initHeight);
-            initScale = EditorGUILayout.FloatField("Grid Scale", initScale);
-
-            if (GUILayout.Button("Initialize Grid"))
-            {
-                Undo.RecordObject(targetContext, "Initialize Terrain Grid");
-                targetContext.TerrainGrid = new TerrainGridData(initWidth, initHeight, initScale);
-                EditorUtility.SetDirty(targetContext);
-            }
-            return;
-        }
-
-        // --- 左右分割のUI ---
         EditorGUILayout.BeginHorizontal();
-        DrawCellList();   // 左：セルリスト
-        DrawCellEditor(); // 右：テクスチャ＆編集
+        DrawPaletteList();    // 左：上下スクロール可能なブラシリスト
+        DrawTextureCanvas();  // 右：キャンバス（塗るエリア）
         EditorGUILayout.EndHorizontal();
+
+        // 保存ボタン
+        GUILayout.Space(10);
+        GUI.backgroundColor = new Color(0.6f, 1.0f, 0.6f);
+        if (GUILayout.Button("Save Terrain Data", GUILayout.Height(35)))
+        {
+            SaveData();
+        }
+        GUI.backgroundColor = Color.white;
     }
 
-    private void DrawCellList()
+    private void DrawInitUI()
     {
-        var grid = targetContext.TerrainGrid;
+        EditorGUILayout.LabelField("グリッドのデータ", EditorStyles.boldLabel);
 
-        EditorGUILayout.BeginVertical(GUILayout.Width(200));
-        leftScrollPos = EditorGUILayout.BeginScrollView(leftScrollPos, "box");
+        // 横並びにする
+        EditorGUILayout.BeginHorizontal();
 
-        for (int y = 0; y < grid.Height; y++)
+        gridWidth = EditorGUILayout.IntField("Width", targetContext.TerrainGrid.Width);
+        gridHeight = EditorGUILayout.IntField("Height", targetContext.TerrainGrid.Height);
+        cellScale = EditorGUILayout.FloatField("Grid Scale", targetContext.TerrainGrid.GridScale);
+        EditorGUILayout.EndHorizontal();
+
+        if (GUILayout.Button("Initialize Grid"))
         {
-            for (int x = 0; x < grid.Width; x++)
-            {
-                bool isSelected = (selectedX == x && selectedY == y);
-                GUI.color = isSelected ? Color.cyan : Color.white;
+            Undo.RecordObject(targetContext, "Initialize Terrain Grid");
+            targetContext.TerrainGrid = new TerrainGridData(gridWidth, gridHeight, cellScale);
+            EditorUtility.SetDirty(targetContext);
+        }
+    }
 
-                if (GUILayout.Button($"Cell [{x}, {y}]"))
-                {
-                    selectedX = x;
-                    selectedY = y;
-                    GUI.FocusControl(null);
-                }
-                GUI.color = Color.white;
+    // --- 左側：カラーパレット（上下スクロールリスト） ---
+    private void DrawPaletteList()
+    {
+        EditorGUILayout.BeginVertical("box", GUILayout.Width(260));
+        GUILayout.Label("Cell Palette", EditorStyles.boldLabel);
+        EditorGUILayout.HelpBox("リストからセルを選択し、右の画像に塗ります。", MessageType.Info);
+
+        // スクロール可能なリスト部分
+        paletteScrollPos = EditorGUILayout.BeginScrollView(paletteScrollPos, "box", GUILayout.ExpandHeight(true));
+
+        for (int i = 0; i < cellPalette.Count; i++)
+        {
+            // 選択中のセルは色を変えてハイライト
+            GUI.backgroundColor = (i == selectedCellIndex) ? new Color(0.6f, 0.8f, 1.0f) : Color.white;
+
+            // セルの表示名をパラメータから自動生成
+            string brushName = GetBrushName(i, cellPalette[i]);
+
+            if (GUILayout.Button(brushName, GUILayout.Height(30)))
+            {
+                selectedCellIndex = i;
+                GUI.FocusControl(null); // 入力フォーカスを外す
             }
         }
+        GUI.backgroundColor = Color.white; // 色を元に戻す
 
         EditorGUILayout.EndScrollView();
+        
+        GUILayout.Space(5);
+
+        // 新しいセルの追加ボタン
+        if (GUILayout.Button("+ 新しいセルを追加", GUILayout.Height(25)))
+        {
+            cellPalette.Add(new GridCell { solid = true, durability = 10, mass = 1 });
+            selectedCellIndex = cellPalette.Count - 1; // 追加したものを自動で選択
+            paletteScrollPos.y = float.MaxValue; // 一番下までスクロールさせる
+        }
+
+        GUILayout.Space(10);
+
+        // --- 選択中のセルのパラメータ編集 ---
+        DrawBrushSettings();
+
         EditorGUILayout.EndVertical();
     }
 
-    private void DrawCellEditor()
+    // セルの表示名を生成するヘルパー関数
+    private string GetBrushName(int index, GridCell cell)
     {
-        var grid = targetContext.TerrainGrid;
+        if (!cell.solid) return $"{index}: 消しゴム (Empty)";
+        return $"{index}: ブロック ({cell.elementType})";
+    }
 
-        EditorGUILayout.BeginVertical("box");
-        DrawTexturePreview(); // テクスチャ描画（グリッド付き）
-        GUILayout.Space(20);
+    // 選択中のセルのプロパティを描画
+    private void DrawBrushSettings()
+    {
+        GUILayout.Label("Selected Brush Settings", EditorStyles.boldLabel);
 
-        // 選択されたセルが有効範囲内か
-        if (grid.InBounds(selectedX, selectedY))
+        if (selectedCellIndex >= 0 && selectedCellIndex < cellPalette.Count)
         {
-            GUILayout.Label($"Editing Cell [{selectedX}, {selectedY}]", EditorStyles.boldLabel);
-
-            GridCell cell = grid.Get(selectedX, selectedY);
+            GridCell current = cellPalette[selectedCellIndex];
 
             EditorGUI.BeginChangeCheck();
+            current.solid = EditorGUILayout.Toggle("Solid", current.solid);
+            current.isStatic = EditorGUILayout.Toggle("Is Static", current.isStatic);
+            current.elementType = (ElementType)EditorGUILayout.EnumPopup("Element Type", current.elementType);
+            current.durability = EditorGUILayout.FloatField("Durability", current.durability);
+            current.mass = EditorGUILayout.FloatField("Mass", current.mass);
 
-            cell.solid = EditorGUILayout.Toggle("Solid", cell.solid);
-            cell.isStatic = EditorGUILayout.Toggle("Is Static", cell.isStatic);
-            // ElementTypeがenumであることを前提としています
-            cell.elementType = (ElementType)EditorGUILayout.EnumPopup("Element Type", cell.elementType);
-            cell.durability = EditorGUILayout.FloatField("Durability", cell.durability);
-            cell.mass = EditorGUILayout.FloatField("Mass", cell.mass);
-
+            // 値に変更があった場合はリスト内のデータを更新
             if (EditorGUI.EndChangeCheck())
             {
-                Undo.RecordObject(targetContext, "Edit Cell Data");
-                targetContext.TerrainGrid.Set(selectedX, selectedY, cell);
-                EditorUtility.SetDirty(targetContext); // 保存フラグを立てる
+                cellPalette[selectedCellIndex] = current;
             }
         }
-        else
-        {
-            GUILayout.Label("左のリスト、または画像をクリックしてセルを選択してください。");
-        }
-
-        EditorGUILayout.EndVertical();
     }
 
-    private void DrawTexturePreview()
+    // --- 右側：キャンバス（テクスチャとペイント処理） ---
+    private void DrawTextureCanvas()
     {
         var grid = targetContext.TerrainGrid;
         Texture texture = null;
 
-        // Rendererコンポーネントを取得してからマテリアルにアクセスする
         var renderer = targetContext.GetComponent<Renderer>();
         if (renderer != null && renderer.sharedMaterial != null)
         {
-            // カスタムシェーダーで "_MainTexture" というプロパティ名を使っている場合
-            texture = renderer.sharedMaterial.GetTexture("_MainTexture");
-
-            // もし上記で取れなかった場合の保険（一般的な標準シェーダーのプロパティ名は "_MainTex" です）
-            if (texture == null)
-            {
-                texture = renderer.sharedMaterial.mainTexture;
-            }
+            // シェーダーからテクスチャを取得する
+            texture = renderer.sharedMaterial.GetTexture("_MainTexture") ?? renderer.sharedMaterial.mainTexture;
         }
+
+        EditorGUILayout.BeginVertical("box");
+        GUILayout.Label("Canvas (Click & Drag to Paint)", EditorStyles.boldLabel);
+
+        // テクスチャを表示
         if (texture != null)
         {
-            GUILayout.Label("Texture Preview (Click to select cell):", EditorStyles.boldLabel);
-
-            // テクスチャプレビュー用の矩形を確保
-            Rect texRect = GUILayoutUtility.GetRect(256, 256, GUILayout.ExpandWidth(false));
+            // 表示する枠のサイズ設定
+            Rect texRect = GUILayoutUtility.GetRect(512, 512, GUILayout.ExpandWidth(false));
+            // 表示
             GUI.DrawTexture(texRect, texture, ScaleMode.ScaleToFit);
 
-            // --- 【追加機能】グリッド線とハイライトの描画 ---
+            // 
             float cellWidth = texRect.width / grid.Width;
             float cellHeight = texRect.height / grid.Height;
 
-            // 選択中のセルを水色でハイライト
-            if (grid.InBounds(selectedX, selectedY))
+            // 塗られているセルの可視化
+            for (int y = 0; y < grid.Height; y++)
             {
-                Rect highlightRect = new Rect(texRect.x + selectedX * cellWidth, texRect.y + selectedY * cellHeight, cellWidth, cellHeight);
-                EditorGUI.DrawRect(highlightRect, new Color(0, 1, 1, 0.4f)); // 半透明のシアン
+                for (int x = 0; x < grid.Width; x++)
+                {
+                    if (grid.Get(x, y).solid)
+                    {
+                        // 可視化する領域の設定
+                        // グリッドデータは上下逆にする
+                        Rect fillRect = new Rect(texRect.x + x * cellWidth, texRect.y + texRect.height - (y + 1) * cellHeight, cellWidth, cellHeight);
+                        EditorGUI.DrawRect(fillRect, new Color(1, 0, 0, 0.3f));
+                    }
+                }
             }
 
             // グリッド線の描画
-            Handles.color = new Color(1, 1, 1, 0.3f); // 半透明の白線
-            for (int i = 0; i <= grid.Width; i++) // 縦線
+            Handles.color = new Color(1, 1, 1, 0.3f);
+            for (int i = 0; i <= grid.Width; i++)
             {
-                float x = texRect.x + i * cellWidth;
-                Handles.DrawLine(new Vector2(x, texRect.y), new Vector2(x, texRect.yMax));
+                // 縦線表示
+                Handles.DrawLine(new Vector2(texRect.x + i * cellWidth, texRect.y), new Vector2(texRect.x + i * cellWidth, texRect.yMax));
             }
-            for (int i = 0; i <= grid.Height; i++) // 横線
+            for (int i = 0; i <= grid.Height; i++)
             {
-                float y = texRect.y + i * cellHeight;
-                Handles.DrawLine(new Vector2(texRect.x, y), new Vector2(texRect.xMax, y));
+                // 横線表示
+                Handles.DrawLine(new Vector2(texRect.x, texRect.y + i * cellHeight), new Vector2(texRect.xMax, texRect.y + i * cellHeight));
             }
-            Handles.color = Color.white; // 色を戻す
-            // ------------------------------------------------
+            Handles.color = Color.white;
 
-            // テクスチャクリック判定
+            // --- ペイント（クリック＆ドラッグ）の処理 ---
             Event e = Event.current;
-            if (e.type == EventType.MouseDown && texRect.Contains(e.mousePosition))
+            if (texRect.Contains(e.mousePosition))
             {
-                Vector2 localPos = e.mousePosition - texRect.position;
-                float normX = localPos.x / texRect.width;
-                float normY = localPos.y / texRect.height;
+                if (e.type == EventType.MouseDown || e.type == EventType.MouseDrag)
+                {
+                    if (e.button == 0 && cellPalette.Count > 0) // 左クリックかつセルが存在する場合
+                    {
+                        Vector2 localPos = e.mousePosition - texRect.position;
+                        int cx = Mathf.Clamp(Mathf.FloorToInt((localPos.x / texRect.width) * grid.Width), 0, grid.Width - 1);
+                        int cy = Mathf.Clamp(Mathf.FloorToInt((localPos.y / texRect.height) * grid.Height), 0, grid.Height - 1);
 
-                int cx = Mathf.FloorToInt(normX * grid.Width);
-                int cy = Mathf.FloorToInt(normY * grid.Height);
+                        // 上下逆にする
+                        cy = grid.Height - (cy + 1);
 
-                selectedX = Mathf.Clamp(cx, 0, grid.Width - 1);
-                selectedY = Mathf.Clamp(cy, 0, grid.Height - 1);
+                        // 選択中のブラシのデータをセルに適用
+                        Undo.RecordObject(targetContext, "Paint Terrain Cell");
+                        targetContext.TerrainGrid.Set(cx, cy, cellPalette[selectedCellIndex]);
+                        EditorUtility.SetDirty(targetContext);
 
-                Repaint();
+                        e.Use();
+                    }
+                }
             }
         }
         else
         {
             EditorGUILayout.HelpBox("対象オブジェクトのRenderer/Materialにテクスチャが設定されていません。", MessageType.Warning);
         }
+
+        EditorGUILayout.EndVertical();
+    }
+
+    private void SaveData()
+    {
+        if (targetContext == null) return;
+        EditorUtility.SetDirty(targetContext);
+        if (!EditorUtility.IsPersistent(targetContext))
+        {
+            EditorSceneManager.MarkSceneDirty(targetContext.gameObject.scene);
+        }
+        AssetDatabase.SaveAssets();
+        Debug.Log($"[{targetContext.gameObject.name}] の TerrainGrid データを保存しました。");
     }
 }
