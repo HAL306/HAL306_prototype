@@ -1,7 +1,6 @@
 using LibTessDotNet;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.ParticleSystem;
 
 namespace Game.Terrain
 {

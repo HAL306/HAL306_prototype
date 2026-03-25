@@ -12,14 +12,8 @@ namespace Game.Terrain
 
         public TerrainGridData TerrainGrid
         {
-            get
-            {
-                return _terrainGrid;
-            }
-            set
-            {
-                _terrainGrid = value;
-            }
+            get { return _terrainGrid; }
+            set { _terrainGrid = value; }
         }
 
         private void Awake()
