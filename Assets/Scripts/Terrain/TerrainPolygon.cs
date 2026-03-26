@@ -19,8 +19,6 @@ namespace Game.Terrain
         private MeshFilter _meshFilter;                     // メッシュ情報
 
         private bool _rebuildFlag = false;                  // ポリゴン再構築フラグ
-        private float _colliderEpsilon = 0.4f;              // コライダー形状の簡略化レベル
-        private float _rendererEpsilon = 0.2f;              // レンダラー形状の簡略化レベル
 
 
         private void Awake()
@@ -44,6 +42,8 @@ namespace Game.Terrain
                 {
                     Debug.Log("地形ポリゴンの生成に失敗しました");
                 }
+
+                _rebuildFlag = false;
             }
         }
 
@@ -88,7 +88,7 @@ namespace Game.Terrain
                 List<Vector2> colliderPath = edgeLoops[i].edgePoints;
 
                 // エッジループ簡略化
-                float epsilon = _colliderEpsilon * terrainGrid.GridScale;
+                float epsilon = _terrainContext.TerrainSetting.ColliderEpsilon * terrainGrid.GridScale;
                 colliderPath = RamerDouglasPeucker.RamerDouglasPeuckerAlgorithm(colliderPath, epsilon);
 
                 // コライダー形状を更新
@@ -112,7 +112,7 @@ namespace Game.Terrain
                 List<Vector2> renderMeshPath = edgeLoops[i].edgePoints;
 
                 // エッジループ簡略化
-                float epsilon = _rendererEpsilon * terrainGrid.GridScale;
+                float epsilon = _terrainContext.TerrainSetting.RendererEpsilon * terrainGrid.GridScale;
                 renderMeshPath = RamerDouglasPeucker.RamerDouglasPeuckerAlgorithm(renderMeshPath, epsilon);
 
                 // 回転方向を取得
@@ -127,7 +127,7 @@ namespace Game.Terrain
                 }
 
                 // エッジループを登録
-                tess.AddContour(ToContour(edgeLoops[i].edgePoints), orientation);
+                tess.AddContour(ToContour(renderMeshPath), orientation);
             }
 
             // エッジループを三角面化

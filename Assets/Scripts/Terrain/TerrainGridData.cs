@@ -1,5 +1,3 @@
-using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Game.Terrain
@@ -15,8 +13,9 @@ namespace Game.Terrain
         private int _height;        // グリッドの高さ
         private float _gridScale;   // 1マスのサイズ
         
-        private int[] _visitedGen;
+        private int[] _visitedGen;  // 世代管理される探索済み記録用グリッド
         private int[] _visitedId;
+
 
         public int Width => _width;
         public int Height => _height;
@@ -68,7 +67,7 @@ namespace Game.Terrain
         }
 
         // グリッド内にstaticセルが含まれているかを判定する
-        public bool isStatic()
+        public bool IsStatic()
         {
             foreach (GridCell cell in _grid)
             {
