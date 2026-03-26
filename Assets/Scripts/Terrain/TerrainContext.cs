@@ -11,6 +11,7 @@ namespace Game.Terrain
         [SerializeField, Tooltip("地形の全体設定")]
         private TerrainSetting _terrainSetting;
 
+        [SerializeField]
         private TerrainGridData _terrainGrid;       // 地形データ
 
 

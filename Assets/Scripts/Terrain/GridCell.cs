@@ -8,6 +8,8 @@ namespace Game.Terrain
 
     }
 
+    // エディタの変更を保存する
+    [System.Serializable]   
     public struct GridCell
     {
         public bool solid;                  // 地形が存在するかのフラグ
