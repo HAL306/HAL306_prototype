@@ -1,8 +1,9 @@
 using Game.Terrain;
-using UnityEditor;
-using UnityEngine;
-using UnityEditor.SceneManagement;
 using System.Collections.Generic;
+using UnityEditor;
+using UnityEditor.PackageManager.UI;
+using UnityEditor.SceneManagement;
+using UnityEngine;
 
 public class TerrainEditorWindow : EditorWindow
 {
@@ -21,24 +22,9 @@ public class TerrainEditorWindow : EditorWindow
     public static TerrainEditorWindow OpenWindow(ref TerrainContext context)
     {
         TerrainEditorWindow window = GetWindow<TerrainEditorWindow>("Terrain Palette Editor");
-        window.targetContext = context;
+        window.Init(ref context);
         window.Show();
         return window;
-    }
-
-    private void OnEnable()
-    {
-        // ウィンドウを開いた時に初期パレットを用意する
-        if (cellPalette.Count == 0)
-        {
-            cellPalette.Add(new GridCell { solid = false, isStatic = false, durability = 0, mass = 0 });   // 0: 消しゴム
-            cellPalette.Add(new GridCell { solid = true, isStatic = false, durability = 1, mass = 1 });    // 1: 固定壁
-        }
-
-        // 初期化
-        gridWidth = targetContext.TerrainGrid.Width;
-        gridHeight = targetContext.TerrainGrid.Height;
-        cellScale = targetContext.TerrainGrid.GridScale;
     }
 
     private void OnGUI()
@@ -59,6 +45,20 @@ public class TerrainEditorWindow : EditorWindow
             SaveData();
         }
         GUI.backgroundColor = Color.white;
+    }
+
+    // 初期化
+    private void Init(ref TerrainContext context)
+    {
+        targetContext = context; 
+
+        // ウィンドウを開いた時に初期パレットを用意する
+        InitPalette();
+
+        // 初期化
+        gridWidth = targetContext.TerrainGrid.Width;
+        gridHeight = targetContext.TerrainGrid.Height;
+        cellScale = targetContext.TerrainGrid.GridScale;
     }
 
     private void DrawInitUI()
@@ -114,7 +114,7 @@ public class TerrainEditorWindow : EditorWindow
         // 新しいセルの追加ボタン
         if (GUILayout.Button("+ 新しいセルを追加", GUILayout.Height(25)))
         {
-            cellPalette.Add(new GridCell { solid = true, durability = 10, mass = 1 });
+            cellPalette.Add(new GridCell { solid = true, durability = 1, mass = 1 });
             selectedCellIndex = cellPalette.Count - 1; // 追加したものを自動で選択
             paletteScrollPos.y = float.MaxValue; // 一番下までスクロールさせる
         }
@@ -259,5 +259,51 @@ public class TerrainEditorWindow : EditorWindow
         }
         AssetDatabase.SaveAssets();
         Debug.Log($"[{targetContext.gameObject.name}] の TerrainGrid データを保存しました。");
+    }
+
+    // パレットの初期化
+    /// <summary>
+    // オブジェクトに記録されているTerrainContextに含まれるセルの情報を反映させる
+    /// </summary>
+    private void InitPalette()
+    {
+        if (cellPalette.Count != 0)
+            return;
+
+        // どんなデータでも必ずパレットに登録するデータ
+        cellPalette.Add(new GridCell { solid = false, isStatic = false, durability = 0, mass = 0 });   // 0: 消しゴム
+        cellPalette.Add(new GridCell { solid = true, isStatic = false, durability = 1, mass = 1 });    // 1: 固定壁
+
+        // グリッドデータ取り出す
+        TerrainGridData grid = targetContext.TerrainGrid;
+
+        // パレットに登録する
+        for (int y = 0; y < grid.Height; y++)
+        {
+            for (int x = 0; x < grid.Width; x++)
+            {
+                // パレットに登録するかどうか
+                bool IsAdd = true;
+                GridCell cell = grid.Get(x, y);
+
+                // パレットに既に存在するかどうか確認する
+                for(int i = 0; i < cellPalette.Count; i++)
+                {
+                    // 存在したら
+                    if(cell.Equals(cellPalette[i]))
+                    {
+                        // パレットに追加しない
+                        IsAdd = false;
+                        break;
+                    }
+                }
+
+                if (IsAdd)
+                {
+                    // パレットに登録
+                    cellPalette.Add((GridCell)cell);
+                }
+            }
+        }
     }
 }
