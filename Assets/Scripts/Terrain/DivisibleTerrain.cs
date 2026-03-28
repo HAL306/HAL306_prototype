@@ -1,8 +1,12 @@
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Game.Terrain
 {
+    /// <summary>
+    /// 地形のダメージ判定を行い、地形を分離・消滅させるコンポーネント
+    /// </summary>
     [RequireComponent (typeof(TerrainContext))]
     [RequireComponent (typeof(TerrainPolygon))]
     public class DivisibleTerrain : MonoBehaviour
@@ -76,40 +80,61 @@ namespace Game.Terrain
 
             if (!refCell.solid) return;
 
+            // セルごとのダメージ処理
             refCell.durability -= damage;
             
             if (refCell.durability <= 0.0f)
             {
+                // 破壊エフェクト生成
+                Vector3 effectPos = transform.TransformPoint(new Vector3(x, y, 0.0f) * terrainGrid.GridScale);
+                Instantiate(_terrainContext.TerrainSetting.DestroyEffect, effectPos, Quaternion.identity);
+
+                // 地形分離判定を行う
                 var splitResults = TerrainSplitDetector.Instance.RemoveAndCheckSplit(terrainGrid, x, y);
 
                 if (splitResults.Count > 0)
                 {
+                    // 分離判定結果ごとに地形を生成
                     foreach (SplitResult result in splitResults)
                     {
                         DivisibleTerrain newChunk = Instantiate(this);
 
+                        // 新しく生成された地形の位置補正
                         Vector3 localOffset = new Vector3(
                             result.Offset.x * terrainGrid.GridScale,
                             result.Offset.y * terrainGrid.GridScale,
-                            0f
+                            0.0f
                         );
-                        
                         newChunk.transform.position = this.transform.TransformPoint(localOffset);
                         newChunk.transform.rotation = this.transform.rotation;
 
+                        // テクスチャのオフセットを補正
                         if(newChunk.gameObject.TryGetComponent<MeshRenderer>(out var mr))
                         {
                             Vector2 offset = mr.material.GetVector("_TextureOffset");
-                            Debug.Log($"{offset}{localOffset}", gameObject);
                             mr.material.SetVector("_TextureOffset", offset + (Vector2)localOffset);
                         }
 
-                        if (TryGetComponent<Rigidbody2D>(out var rb) && newChunk.TryGetComponent<Rigidbody2D>(out var newRb))
+                        // リジッドボディーの追加と現在の速度の維持
+                        if (TryGetComponent<Rigidbody2D>(out var rb))
                         {
-                            newRb.linearVelocity = rb.linearVelocity; 
-                            newRb.angularVelocity = rb.angularVelocity;
+                            if (newChunk.TryGetComponent<Rigidbody2D>(out var newRb))
+                            {
+                                // 速度コピー
+                                newRb.linearVelocity = rb.linearVelocity;
+                                newRb.angularVelocity = rb.angularVelocity;
+                            }
+                        }
+                        else
+                        {
+                            // 固定地形判定
+                            if (!result.GridData.IsStatic())
+                            {
+                                newChunk.AddComponent<Rigidbody2D>();
+                            }
                         }
 
+                        // 当たり判定初期化
                         if (newChunk.TryGetComponent<PolygonCollider2D>(out var col)) col.pathCount = 0;
                         
                         newChunk.Initialize(result.GridData);
