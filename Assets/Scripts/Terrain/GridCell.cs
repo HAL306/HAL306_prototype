@@ -17,5 +17,6 @@ namespace Game.Terrain
         public ElementType elementType;     // 地形の属性
         public float durability;            // 耐久値
         public float mass;                  // 質量
+        public Vector2 offset;              // 歪ませ用座標オフセット
     }
 }

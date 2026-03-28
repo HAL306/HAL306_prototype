@@ -17,7 +17,6 @@ namespace Game.Terrain
 
         public TerrainSetting TerrainSetting => _terrainSetting;
 
-
         public TerrainGridData TerrainGrid
         {
             get { return _terrainGrid; }

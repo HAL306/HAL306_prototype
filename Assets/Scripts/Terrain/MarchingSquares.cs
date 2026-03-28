@@ -285,29 +285,36 @@ namespace Game.Terrain
         // グリッド座標と接続点の種類から実際のエッジ頂点を求める
         private Vector2 GetEdgePos(Vector2Int gridPos, EdgePointType edgePoint)
         {
-            Vector2 result = gridPos;
+            TerrainGridData terrainGrid = _terrainContext.TerrainGrid;
 
+            Vector2 a = new Vector2();
+            Vector2 b = new Vector2();
+
+            // 線形補完に使用するセルの座標を取得
             switch (edgePoint)
             {
                 case EdgePointType.TOP:
-                    result += new Vector2(0.5f, 1.0f);
+                    a = terrainGrid.GetCellLocalPos(gridPos.x, gridPos.y + 1);
+                    b = terrainGrid.GetCellLocalPos(gridPos.x + 1, gridPos.y + 1);
                     break;
 
                 case EdgePointType.BOTTOM:
-                    result += new Vector2(0.5f, 0.0f);
+                    a = terrainGrid.GetCellLocalPos(gridPos.x, gridPos.y);
+                    b = terrainGrid.GetCellLocalPos(gridPos.x + 1, gridPos.y);
                     break;
 
                 case EdgePointType.LEFT:
-                    result += new Vector2(0.0f, 0.5f);
+                    a = terrainGrid.GetCellLocalPos(gridPos.x, gridPos.y);
+                    b = terrainGrid.GetCellLocalPos(gridPos.x, gridPos.y + 1);
                     break;
 
                 case EdgePointType.RIGHT:
-                    result += new Vector2(1.0f, 0.5f);
+                    a = terrainGrid.GetCellLocalPos(gridPos.x + 1, gridPos.y);
+                    b = terrainGrid.GetCellLocalPos(gridPos.x + 1, gridPos.y + 1);
                     break;
             }
 
-            result *= _terrainContext.TerrainGrid.GridScale;
-            return result;
+            return Vector2.Lerp(a, b, 0.5f);
         }
 
         // グリッド座標とエッジ終点から次のグリッド座標を求める

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TerrainSetting
   _destroyEffect: {fileID: 4323657979379294987, guid: a9a7af1c88d802346a42cc8da0782dcb, type: 3}
   _colliderEpsilon: 0.4
-  _rendererEpsilon: 0.35
+  _rendererEpsilon: 0.3

@@ -5,7 +5,6 @@ namespace Game.Terrain
     /// <summary>
     /// 地形のグリッド情報を管理するクラス
     /// </summary>
-    // エディタの変更を保存する
     [System.Serializable]
     public class TerrainGridData
     {
@@ -80,12 +79,15 @@ namespace Game.Terrain
             return false;
         }
 
-        // グリッドの座標をグリッドスケールを考慮したローカル座標に変換
+        // グリッドの座標をグリッドスケールとセルの歪み用オフセットを考慮したローカル座標で取得
         public Vector2 GetCellLocalPos(int x, int y)
         {
             Vector2 pos = new Vector2(x, y);
-            return pos * _gridScale;
 
+            if (InBounds(x, y))
+                pos += Get(x, y).offset;
+
+            return pos * _gridScale;
         }
 
         // 指定したグリッド座標がグリッド内に収まっているか調べる

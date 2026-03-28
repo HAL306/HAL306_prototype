@@ -36,9 +36,12 @@ public class TerrainEditorWindow : EditorWindow
         }
 
         // èâä˙âª
-        gridWidth = targetContext.TerrainGrid.Width;
-        gridHeight = targetContext.TerrainGrid.Height;
-        cellScale = targetContext.TerrainGrid.GridScale;
+        if (targetContext != null)
+        {
+            gridWidth = targetContext.TerrainGrid.Width;
+            gridHeight = targetContext.TerrainGrid.Height;
+            cellScale = targetContext.TerrainGrid.GridScale;
+        }
     }
 
     private void OnGUI()
@@ -197,7 +200,7 @@ public class TerrainEditorWindow : EditorWindow
                     if (!grid.Get(x, y).solid)
                     {
                         // ìhÇÁÇÍÇƒÇ»Ç¢ïîï™ÇäDêFÇ…Ç∑ÇÈ
-                        EditorGUI.DrawRect(fillRect, new Color(0.3f, 0.3f, 0.3f, 0.4f));
+                        EditorGUI.DrawRect(fillRect, new Color(0.3f, 0.3f, 0.3f, 0.8f));
                     }
                 }
             }
