@@ -4,14 +4,17 @@ using UnityEditor;
 using UnityEditor.PackageManager.UI;
 using UnityEditor.SceneManagement;
 using UnityEngine;
+using static Codice.CM.Common.CmCallContext;
 
 public class TerrainEditorWindow : EditorWindow
 {
     // 編集対象のテレインデータ
     private TerrainContext targetContext;
 
-    // オブジェクトに貼るテクスチャ
-    Texture texture;
+    // シェーダーに渡すデータ
+    Texture texture;            // テクスチャ
+    Vector2 textureScale = new Vector2(0.2f,0.2f);          // テクスチャの表示サイズ
+    Vector2 textureOffset = new Vector2(0.0f, 0.0f);        // テクスチャの位置
 
     // パレット用のリストと状態管理
     private List<GridCell> cellPalette = new List<GridCell>();
@@ -37,8 +40,9 @@ public class TerrainEditorWindow : EditorWindow
         DrawInitUI();
 
         EditorGUILayout.BeginHorizontal();
-        DrawPaletteList();    // 左：上下スクロール可能なブラシリスト
-        DrawTextureCanvas();  // 右：キャンバス（塗るエリア）
+        DrawPaletteList();      // 左：上下スクロール可能なブラシリスト
+        DrawTextureCanvas();    // 中央：キャンバス（塗るエリア）
+        DrawTextureData();      // 右:シェーダーに渡すデータ
         EditorGUILayout.EndHorizontal();
 
         // 保存ボタン
@@ -255,14 +259,61 @@ public class TerrainEditorWindow : EditorWindow
 
     private void SaveData()
     {
-        if (targetContext == null) return;
-        EditorUtility.SetDirty(targetContext);
-        if (!EditorUtility.IsPersistent(targetContext))
+        if (targetContext == null) return;      // NULLチェック
+        EditorUtility.SetDirty(targetContext);  // unityに変更を通知する
+        if (!EditorUtility.IsPersistent(targetContext)) // アセットではなくシーン上に存在する場合
         {
-            EditorSceneManager.MarkSceneDirty(targetContext.gameObject.scene);
+            EditorSceneManager.MarkSceneDirty(targetContext.gameObject.scene);  // シーンに*マークを付ける
         }
-        AssetDatabase.SaveAssets();
+        AssetDatabase.SaveAssets();     // アセットの変更をディスクに書き込む
         Debug.Log($"[{targetContext.gameObject.name}] の TerrainGrid データを保存しました。");
+
+        // シェーダーの変更を保存
+        // 現在選択されているオブジェクトを取得
+        GameObject targetObject = targetContext.gameObject;
+
+        if (targetObject == null)   // nullチェック
+        {
+            Debug.LogWarning("オブジェクトが選択されていません。");
+            return;
+        }
+
+        // renderer取得
+        Renderer renderer = targetObject.GetComponent<Renderer>();
+        if (renderer == null)       // nullチェック
+        {
+            Debug.LogWarning($"{targetObject.name} には Renderer コンポーネントがありません。");
+            return;
+        }
+
+        // 新しいマテリアルをメモリ上に生成
+        Shader shader = Shader.Find("Shader Graphs/SH_Terrain");
+        if (shader == null)
+        {
+            Debug.LogError("指定したシェーダーが見つかりません。");
+            return;
+        }
+
+        Material newMaterial = new Material(shader);
+
+        // データを反映させる
+        newMaterial.SetTexture("_MainTexture",texture);
+        newMaterial.SetTextureScale("_TextureScale", textureScale);
+        newMaterial.SetTextureOffset("_TextureOffset", textureOffset);
+
+        // プロジェクト内にアセット（.matファイル）として保存する
+        // GenerateUniqueAssetPathを使うことで、同名ファイルがある場合は "NewMaterial 1.mat" のように自動で連番をつける
+        string assetPath = AssetDatabase.GenerateUniqueAssetPath("Assets/Materials/NewMaterial.mat");
+        AssetDatabase.CreateAsset(newMaterial, assetPath);
+        AssetDatabase.SaveAssets(); // アセットの変更をディスクに書き込む
+
+        // オブジェクトにアタッチする
+        Undo.RecordObject(renderer, "Assign New Material");
+        renderer.sharedMaterial = newMaterial;
+
+        // 変更をマークして、Projectウィンドウ上で選択状態にする
+        EditorUtility.SetDirty(renderer);
+        EditorGUIUtility.PingObject(newMaterial);
     }
 
     // パレットの初期化
@@ -309,5 +360,16 @@ public class TerrainEditorWindow : EditorWindow
                 }
             }
         }
+    }
+
+    // テクスチャやシェーダーに渡すデータを表示、入力する
+    private void DrawTextureData()
+    {
+        EditorGUILayout.BeginVertical("box");
+        GUILayout.Label("テクスチャ設定", EditorStyles.boldLabel);
+        texture = (Texture)EditorGUILayout.ObjectField("Texture", texture, typeof(Texture), false);
+        textureScale = EditorGUILayout.Vector2Field("TextureScale",textureScale);
+        textureOffset = EditorGUILayout.Vector2Field("TextureOffset", textureOffset);
+        EditorGUILayout.EndVertical();
     }
 }
