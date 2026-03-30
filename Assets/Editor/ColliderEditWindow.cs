@@ -1,5 +1,6 @@
 using Game.Terrain;
 using System.Collections.Generic;
+using System.IO;
 using UnityEditor;
 using UnityEditor.PackageManager.UI;
 using UnityEditor.SceneManagement;
@@ -74,6 +75,8 @@ public class TerrainEditorWindow : EditorWindow
         {
             // シェーダーからテクスチャを取得する
             texture = renderer.sharedMaterial.GetTexture("_MainTexture") ?? renderer.sharedMaterial.mainTexture;
+            textureScale = renderer.sharedMaterial.GetVector("_TextureScale");
+            textureOffset = renderer.sharedMaterial.GetVector("_TextureOffset");
         }
     }
 
@@ -186,7 +189,9 @@ public class TerrainEditorWindow : EditorWindow
         if (texture != null)
         {
             // 表示する枠のサイズ設定
-            Rect texRect = GUILayoutUtility.GetRect(512, 512, GUILayout.ExpandWidth(false));
+            float aspect = (float)gridWidth / (float)gridHeight;
+            Rect texRect = GUILayoutUtility.GetAspectRect(aspect);
+            //Rect texRect = GUILayoutUtility.GetRect(512, 512, GUILayout.ExpandWidth(false));
             // 表示
             GUI.DrawTexture(texRect, texture, ScaleMode.ScaleToFit);
 
@@ -286,6 +291,27 @@ public class TerrainEditorWindow : EditorWindow
             return;
         }
 
+        // 古いマテリアルを消す
+        Material material = renderer.sharedMaterial;    // マテリアル取得
+        string path = null;
+        if (material != null)
+        {
+            path = AssetDatabase.GetAssetPath(material);    // マテリアルのパスを取得
+        }
+
+        // 「Assets/」から始まる、自分のプロジェクト内のファイルのみ削除を許可
+        if (!string.IsNullOrEmpty(path) && path.StartsWith("Assets/"))
+        {
+            if (AssetDatabase.DeleteAsset(path))
+            {
+                Debug.Log($"{targetObject.name} にアタッチされていたマテリアルを削除しました。");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("組み込みマテリアル等のため、削除をスキップしました。");
+        }
+
         // 新しいマテリアルをメモリ上に生成
         Shader shader = Shader.Find("Shader Graphs/SH_Terrain");
         if (shader == null)
@@ -298,8 +324,8 @@ public class TerrainEditorWindow : EditorWindow
 
         // データを反映させる
         newMaterial.SetTexture("_MainTexture",texture);
-        newMaterial.SetTextureScale("_TextureScale", textureScale);
-        newMaterial.SetTextureOffset("_TextureOffset", textureOffset);
+        newMaterial.SetVector("_TextureScale", textureScale);
+        newMaterial.SetVector("_TextureOffset", textureOffset);
 
         // プロジェクト内にアセット（.matファイル）として保存する
         // GenerateUniqueAssetPathを使うことで、同名ファイルがある場合は "NewMaterial 1.mat" のように自動で連番をつける
@@ -313,6 +339,7 @@ public class TerrainEditorWindow : EditorWindow
 
         // 変更をマークして、Projectウィンドウ上で選択状態にする
         EditorUtility.SetDirty(renderer);
+        AssetDatabase.SaveAssets();     // アセットの変更をディスクに書き込む
         EditorGUIUtility.PingObject(newMaterial);
     }
 
@@ -362,14 +389,14 @@ public class TerrainEditorWindow : EditorWindow
         }
     }
 
-    // テクスチャやシェーダーに渡すデータを表示、入力する
+    // --- 右側：テクスチャやシェーダーに渡すデータを表示、入力する
     private void DrawTextureData()
     {
         EditorGUILayout.BeginVertical("box");
         GUILayout.Label("テクスチャ設定", EditorStyles.boldLabel);
-        texture = (Texture)EditorGUILayout.ObjectField("Texture", texture, typeof(Texture), false);
-        textureScale = EditorGUILayout.Vector2Field("TextureScale",textureScale);
-        textureOffset = EditorGUILayout.Vector2Field("TextureOffset", textureOffset);
+        texture = (Texture)EditorGUILayout.ObjectField("Texture", texture, typeof(Texture), false, GUILayout.ExpandWidth(false));
+        textureScale = EditorGUILayout.Vector2Field("TextureScale",textureScale, GUILayout.ExpandWidth(false));
+        textureOffset = EditorGUILayout.Vector2Field("TextureOffset", textureOffset,GUILayout.ExpandWidth(false));
         EditorGUILayout.EndVertical();
     }
 }
