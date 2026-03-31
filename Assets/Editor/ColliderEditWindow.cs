@@ -7,13 +7,23 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using static Codice.CM.Common.CmCallContext;
 
+// パレットに使うデータ
+struct PaletteCell  
+{
+    public GridCell cell;
+    public bool isPaint;
+    public Color color;
+}
+
 public class TerrainEditorWindow : EditorWindow
 {
     // 編集対象のテレインデータの参照
     private TerrainContext targetContext;
 
-    // 実際に編集するデータ
-    private TerrainGridData terrainGridData;
+    // 実際に編集する仮データ
+    // パレットのインデックスを格納する
+    //private TerrainGridData terrainGridData;
+    private int[] cellMap = null;
 
     // シェーダーに渡すデータ
     private Texture texture;            // テクスチャ
@@ -21,9 +31,12 @@ public class TerrainEditorWindow : EditorWindow
     private Vector2 textureOffset = new Vector2(0.0f, 0.0f);        // テクスチャの位置
 
     // パレット用のリストと状態管理
-    private List<GridCell> cellPalette = new List<GridCell>();
+    private List<PaletteCell> cellPalette = new List<PaletteCell>();
     private int selectedCellIndex = 0;
     private Vector2 paletteScrollPos; // パレットリストのスクロール位置
+
+    // セル選択ツールを使ってるかどうか
+    private bool isSelect = true;
 
     // 初期化用
     private int gridWidth = 10;
@@ -64,10 +77,10 @@ public class TerrainEditorWindow : EditorWindow
     {
         // 初期化
         targetContext = context;
-        terrainGridData = context.TerrainGrid;
         gridWidth = targetContext.TerrainGrid.Width;
         gridHeight = targetContext.TerrainGrid.Height;
         cellScale = targetContext.TerrainGrid.GridScale;
+        cellMap = new int[gridWidth * gridHeight];
 
         // ウィンドウを開いた時に初期パレットを用意する
         InitPaletteAndCellmap();
@@ -98,22 +111,27 @@ public class TerrainEditorWindow : EditorWindow
         if (EditorGUI.EndChangeCheck())
         {
             // データの大きさを再設定
-            terrainGridData = new TerrainGridData(gridWidth, gridHeight, cellScale);
+            cellMap = new int[gridWidth * gridHeight];
         }
         EditorGUILayout.EndHorizontal();
-
-        //if (GUILayout.Button("Initialize Grid"))
-        //{
-        //    Undo.RecordObject(targetContext, "Initialize Terrain Grid");
-        //    targetContext.TerrainGrid = new TerrainGridData(gridWidth, gridHeight, cellScale);
-        //    EditorUtility.SetDirty(targetContext);
-        //}
     }
 
     // --- 左側：カラーパレット（上下スクロールリスト） ---
     private void DrawPaletteList()
     {
         EditorGUILayout.BeginVertical("box", GUILayout.Width(260));
+
+        if (isSelect)   // 選択ツール使用中は色変える
+        {
+            GUI.backgroundColor = new Color(1.0f, 1.0f, 0.0f);
+        }
+        if (GUILayout.Button("セル選択ツール", GUILayout.Height(30)))
+        {
+            // 選択ツール切り替え
+            isSelect = !isSelect;
+        }
+        GUI.backgroundColor = Color.white; // 色を元に戻す
+
         GUILayout.Label("Cell Palette", EditorStyles.boldLabel);
         EditorGUILayout.HelpBox("リストからセルを選択し、右の画像に塗ります。", MessageType.Info);
 
@@ -126,11 +144,13 @@ public class TerrainEditorWindow : EditorWindow
             GUI.backgroundColor = (i == selectedCellIndex) ? new Color(0.6f, 0.8f, 1.0f) : Color.white;
 
             // セルの表示名をパラメータから自動生成
-            string brushName = GetBrushName(i, cellPalette[i]);
+            string brushName = GetBrushName(i, cellPalette[i].cell);
 
             if (GUILayout.Button(brushName, GUILayout.Height(30)))
             {
                 selectedCellIndex = i;
+                // 選択ツールオフ
+                isSelect = false;
                 GUI.FocusControl(null); // 入力フォーカスを外す
             }
         }
@@ -143,9 +163,10 @@ public class TerrainEditorWindow : EditorWindow
         // 新しいセルの追加ボタン
         if (GUILayout.Button("+ 新しいセルを追加", GUILayout.Height(25)))
         {
-            cellPalette.Add(new GridCell { solid = true, durability = 1, mass = 1 });
-            selectedCellIndex = cellPalette.Count - 1; // 追加したものを自動で選択
-            paletteScrollPos.y = float.MaxValue; // 一番下までスクロールさせる
+            cellPalette.Add(new PaletteCell { cell = { solid = true, durability = 1, mass = 1 }, isPaint = false,color = Color.white});
+            selectedCellIndex = cellPalette.Count - 1;  // 追加したものを自動で選択
+            paletteScrollPos.y = float.MaxValue;    // 一番下までスクロールさせる
+            isSelect = false;                       // 選択ツールオフ
         }
 
         GUILayout.Space(10);
@@ -170,14 +191,17 @@ public class TerrainEditorWindow : EditorWindow
 
         if (selectedCellIndex >= 0 && selectedCellIndex < cellPalette.Count)
         {
-            GridCell current = cellPalette[selectedCellIndex];
+            PaletteCell current = cellPalette[selectedCellIndex];
 
             EditorGUI.BeginChangeCheck();
-            current.solid = EditorGUILayout.Toggle("Solid", current.solid);
-            current.isStatic = EditorGUILayout.Toggle("Is Static", current.isStatic);
-            current.elementType = (ElementType)EditorGUILayout.EnumPopup("Element Type", current.elementType);
-            current.durability = EditorGUILayout.FloatField("Durability", current.durability);
-            current.mass = EditorGUILayout.FloatField("Mass", current.mass);
+
+            current.isPaint = EditorGUILayout.Toggle("IsPaint", current.isPaint);
+            current.color = EditorGUILayout.ColorField("Color", current.color);
+            current.cell.solid = EditorGUILayout.Toggle("Solid", current.cell.solid);
+            current.cell.isStatic = EditorGUILayout.Toggle("Is Static", current.cell.isStatic);
+            current.cell.elementType = (ElementType)EditorGUILayout.EnumPopup("Element Type", current.cell.elementType);
+            current.cell.durability = EditorGUILayout.FloatField("Durability", current.cell.durability);
+            current.cell.mass = EditorGUILayout.FloatField("Mass", current.cell.mass);
 
             // 値に変更があった場合はリスト内のデータを更新
             if (EditorGUI.EndChangeCheck())
@@ -206,8 +230,8 @@ public class TerrainEditorWindow : EditorWindow
             GUI.DrawTexture(texRect, texture, ScaleMode.ScaleToFit);
 
             // 
-            float cellWidth = texRect.width / terrainGridData.Width;
-            float cellHeight = texRect.height / terrainGridData.Height;
+            float cellWidth = texRect.width / gridWidth;
+            float cellHeight = texRect.height / gridHeight;
 
             // 塗られているセルの可視化
             for (int y = 0; y < gridHeight; y++)
@@ -217,22 +241,31 @@ public class TerrainEditorWindow : EditorWindow
                     // 可視化する領域の設定
                     // グリッドデータは上下逆にする
                     Rect fillRect = new Rect(texRect.x + x * cellWidth, texRect.y + texRect.height - (y + 1) * cellHeight, cellWidth, cellHeight);
-                    if (!terrainGridData.Get(x, y).solid)
+                    PaletteCell paletteCell = cellPalette[cellMap[y * gridWidth + x]];
+                    if (!paletteCell.cell.solid)
                     {
-                        // 塗られてない部分を灰色にする
+                        // 当たり判定がない部分を灰色にする
                         EditorGUI.DrawRect(fillRect, new Color(0.3f, 0.3f, 0.3f, 0.4f));
+                    }
+                    else
+                    {
+                        if(paletteCell.isPaint)
+                        {
+                            // セルに応じた色付ける
+                            EditorGUI.DrawRect(fillRect, new Color(paletteCell.color.r, paletteCell.color.g, paletteCell.color.b,0.4f));
+                        }
                     }
                 }
             }
 
             // グリッド線の描画
             Handles.color = new Color(1, 1, 1, 0.3f);
-            for (int i = 0; i <= terrainGridData.Width; i++)
+            for (int i = 0; i <= gridWidth; i++)
             {
                 // 縦線表示
                 Handles.DrawLine(new Vector2(texRect.x + i * cellWidth, texRect.y), new Vector2(texRect.x + i * cellWidth, texRect.yMax));
             }
-            for (int i = 0; i <= terrainGridData.Height; i++)
+            for (int i = 0; i <= gridHeight; i++)
             {
                 // 横線表示
                 Handles.DrawLine(new Vector2(texRect.x, texRect.y + i * cellHeight), new Vector2(texRect.xMax, texRect.y + i * cellHeight));
@@ -248,17 +281,22 @@ public class TerrainEditorWindow : EditorWindow
                     if (e.button == 0 && cellPalette.Count > 0) // 左クリックかつセルが存在する場合
                     {
                         Vector2 localPos = e.mousePosition - texRect.position;
-                        int cx = Mathf.Clamp(Mathf.FloorToInt((localPos.x / texRect.width) * terrainGridData.Width), 0, terrainGridData.Width - 1);
-                        int cy = Mathf.Clamp(Mathf.FloorToInt((localPos.y / texRect.height) * terrainGridData.Height), 0, terrainGridData.Height - 1);
+                        int cx = Mathf.Clamp(Mathf.FloorToInt((localPos.x / texRect.width) * gridWidth), 0, gridWidth - 1);
+                        int cy = Mathf.Clamp(Mathf.FloorToInt((localPos.y / texRect.height) * gridHeight), 0, gridHeight - 1);
 
                         // 上下逆にする
-                        cy = terrainGridData.Height - (cy + 1);
+                        cy = gridHeight - (cy + 1);
 
-                        // 選択中のブラシのデータをセルに適用
-                        //Undo.RecordObject(targetContext, "Paint Terrain Cell");
-                        //targetContext.TerrainGrid.Set(cx, cy, cellPalette[selectedCellIndex]);
-                        //EditorUtility.SetDirty(targetContext);
-                        terrainGridData.Set(cx, cy, cellPalette[selectedCellIndex]);
+                        if(isSelect)    // 選択ツール使用中は
+                        {
+                            // セルと同じセルを選択する
+                            selectedCellIndex = cellMap[cy * gridWidth + cx];　
+                        }
+                        else
+                        {
+                            // 選択中のブラシのデータをセルに適用
+                            cellMap[cy * gridWidth + cx] = selectedCellIndex;
+                        }
 
                         e.Use();
                     }
@@ -276,7 +314,16 @@ public class TerrainEditorWindow : EditorWindow
     private void SaveData()
     {
         if (targetContext == null) return;      // NULLチェック
-        targetContext.TerrainGrid = terrainGridData;
+
+        // グリッドデータを作る
+        TerrainGridData grid = new TerrainGridData(gridWidth,gridHeight,cellScale);
+
+        for(int i = 0; i < cellMap.Length; i++)
+        {
+            grid.Set(i, cellPalette[cellMap[i]].cell);   // インデックスからグリッドデータに変える
+        }
+
+        targetContext.TerrainGrid = grid;
         EditorUtility.SetDirty(targetContext);  // unityに変更を通知する
         if (!EditorUtility.IsPersistent(targetContext)) // アセットではなくシーン上に存在する場合
         {
@@ -365,8 +412,8 @@ public class TerrainEditorWindow : EditorWindow
             return;
 
         // どんなデータでも必ずパレットに登録するデータ
-        cellPalette.Add(new GridCell { solid = false, isStatic = false, durability = 0, mass = 0 });   // 0: 消しゴム
-        cellPalette.Add(new GridCell { solid = true, isStatic = false, durability = 1, mass = 1 });    // 1: 固定壁
+        cellPalette.Add(new PaletteCell { cell = { solid = false, isStatic = false, durability = 0, mass = 0 },isPaint = false, color = Color.white});      // 0: 消しゴム
+        cellPalette.Add(new PaletteCell { cell = { solid = true, isStatic = false, durability = 1, mass = 1 }, isPaint = false, color = Color.white });     // 1: 固定壁
 
         // グリッドデータ取り出す
         TerrainGridData grid = targetContext.TerrainGrid;
@@ -384,10 +431,12 @@ public class TerrainEditorWindow : EditorWindow
                 for(int i = 0; i < cellPalette.Count; i++)
                 {
                     // 存在したら
-                    if(cell.Equals(cellPalette[i]))
+                    if(cell.Equals(cellPalette[i].cell))
                     {
                         // パレットに追加しない
                         IsAdd = false;
+                        // 仮データに登録
+                        cellMap[y * grid.Width + x] = i;
                         break;
                     }
                 }
@@ -395,7 +444,9 @@ public class TerrainEditorWindow : EditorWindow
                 if (IsAdd)
                 {
                     // パレットに登録
-                    cellPalette.Add((GridCell)cell);
+                    cellPalette.Add(new PaletteCell { cell = cell, isPaint = false, color = Color.white });
+                    // 仮データに登録
+                    cellMap[y * grid.Width + x] = cellPalette.Count - 1;
                 }
             }
         }
