@@ -157,7 +157,7 @@ public class TerrainEditorWindow : EditorWindow
         GUI.backgroundColor = Color.white; // 色を元に戻す
 
         EditorGUILayout.EndScrollView();
-        
+
         GUILayout.Space(5);
 
         // 新しいセルの追加ボタン
@@ -428,7 +428,7 @@ public class TerrainEditorWindow : EditorWindow
                 GridCell cell = grid.Get(x, y);
 
                 // パレットに既に存在するかどうか確認する
-                for(int i = 0; i < cellPalette.Count; i++)
+                for (int i = 0; i < cellPalette.Count; i++)
                 {
                     // 存在したら
                     if(cell.Equals(cellPalette[i].cell))
