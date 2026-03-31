@@ -9,13 +9,16 @@ using static Codice.CM.Common.CmCallContext;
 
 public class TerrainEditorWindow : EditorWindow
 {
-    // 編集対象のテレインデータ
+    // 編集対象のテレインデータの参照
     private TerrainContext targetContext;
 
+    // 実際に編集するデータ
+    private TerrainGridData terrainGridData;
+
     // シェーダーに渡すデータ
-    Texture texture;            // テクスチャ
-    Vector2 textureScale = new Vector2(0.2f,0.2f);          // テクスチャの表示サイズ
-    Vector2 textureOffset = new Vector2(0.0f, 0.0f);        // テクスチャの位置
+    private Texture texture;            // テクスチャ
+    private Vector2 textureScale = new Vector2(0.2f,0.2f);          // テクスチャの表示サイズ
+    private Vector2 textureOffset = new Vector2(0.0f, 0.0f);        // テクスチャの位置
 
     // パレット用のリストと状態管理
     private List<GridCell> cellPalette = new List<GridCell>();
@@ -59,15 +62,15 @@ public class TerrainEditorWindow : EditorWindow
     // 初期化
     private void Init(ref TerrainContext context)
     {
-        targetContext = context; 
-
-        // ウィンドウを開いた時に初期パレットを用意する
-        InitPalette();
-
         // 初期化
+        targetContext = context;
+        terrainGridData = context.TerrainGrid;
         gridWidth = targetContext.TerrainGrid.Width;
         gridHeight = targetContext.TerrainGrid.Height;
         cellScale = targetContext.TerrainGrid.GridScale;
+
+        // ウィンドウを開いた時に初期パレットを用意する
+        InitPaletteAndCellmap();
 
         // テクスチャが設定されていれば取得する
         var renderer = targetContext.GetComponent<Renderer>();
@@ -87,17 +90,24 @@ public class TerrainEditorWindow : EditorWindow
         // 横並びにする
         EditorGUILayout.BeginHorizontal();
 
+        EditorGUI.BeginChangeCheck();
         gridWidth = EditorGUILayout.IntField("Width", gridWidth);
         gridHeight = EditorGUILayout.IntField("Height", gridHeight);
         cellScale = EditorGUILayout.FloatField("Grid Scale", cellScale);
+
+        if (EditorGUI.EndChangeCheck())
+        {
+            // データの大きさを再設定
+            terrainGridData = new TerrainGridData(gridWidth, gridHeight, cellScale);
+        }
         EditorGUILayout.EndHorizontal();
 
-        if (GUILayout.Button("Initialize Grid"))
-        {
-            Undo.RecordObject(targetContext, "Initialize Terrain Grid");
-            targetContext.TerrainGrid = new TerrainGridData(gridWidth, gridHeight, cellScale);
-            EditorUtility.SetDirty(targetContext);
-        }
+        //if (GUILayout.Button("Initialize Grid"))
+        //{
+        //    Undo.RecordObject(targetContext, "Initialize Terrain Grid");
+        //    targetContext.TerrainGrid = new TerrainGridData(gridWidth, gridHeight, cellScale);
+        //    EditorUtility.SetDirty(targetContext);
+        //}
     }
 
     // --- 左側：カラーパレット（上下スクロールリスト） ---
@@ -196,18 +206,18 @@ public class TerrainEditorWindow : EditorWindow
             GUI.DrawTexture(texRect, texture, ScaleMode.ScaleToFit);
 
             // 
-            float cellWidth = texRect.width / grid.Width;
-            float cellHeight = texRect.height / grid.Height;
+            float cellWidth = texRect.width / terrainGridData.Width;
+            float cellHeight = texRect.height / terrainGridData.Height;
 
             // 塗られているセルの可視化
-            for (int y = 0; y < grid.Height; y++)
+            for (int y = 0; y < gridHeight; y++)
             {
-                for (int x = 0; x < grid.Width; x++)
+                for (int x = 0; x < gridWidth; x++)
                 {
                     // 可視化する領域の設定
                     // グリッドデータは上下逆にする
                     Rect fillRect = new Rect(texRect.x + x * cellWidth, texRect.y + texRect.height - (y + 1) * cellHeight, cellWidth, cellHeight);
-                    if (!grid.Get(x, y).solid)
+                    if (!terrainGridData.Get(x, y).solid)
                     {
                         // 塗られてない部分を灰色にする
                         EditorGUI.DrawRect(fillRect, new Color(0.3f, 0.3f, 0.3f, 0.4f));
@@ -217,12 +227,12 @@ public class TerrainEditorWindow : EditorWindow
 
             // グリッド線の描画
             Handles.color = new Color(1, 1, 1, 0.3f);
-            for (int i = 0; i <= grid.Width; i++)
+            for (int i = 0; i <= terrainGridData.Width; i++)
             {
                 // 縦線表示
                 Handles.DrawLine(new Vector2(texRect.x + i * cellWidth, texRect.y), new Vector2(texRect.x + i * cellWidth, texRect.yMax));
             }
-            for (int i = 0; i <= grid.Height; i++)
+            for (int i = 0; i <= terrainGridData.Height; i++)
             {
                 // 横線表示
                 Handles.DrawLine(new Vector2(texRect.x, texRect.y + i * cellHeight), new Vector2(texRect.xMax, texRect.y + i * cellHeight));
@@ -238,16 +248,17 @@ public class TerrainEditorWindow : EditorWindow
                     if (e.button == 0 && cellPalette.Count > 0) // 左クリックかつセルが存在する場合
                     {
                         Vector2 localPos = e.mousePosition - texRect.position;
-                        int cx = Mathf.Clamp(Mathf.FloorToInt((localPos.x / texRect.width) * grid.Width), 0, grid.Width - 1);
-                        int cy = Mathf.Clamp(Mathf.FloorToInt((localPos.y / texRect.height) * grid.Height), 0, grid.Height - 1);
+                        int cx = Mathf.Clamp(Mathf.FloorToInt((localPos.x / texRect.width) * terrainGridData.Width), 0, terrainGridData.Width - 1);
+                        int cy = Mathf.Clamp(Mathf.FloorToInt((localPos.y / texRect.height) * terrainGridData.Height), 0, terrainGridData.Height - 1);
 
                         // 上下逆にする
-                        cy = grid.Height - (cy + 1);
+                        cy = terrainGridData.Height - (cy + 1);
 
                         // 選択中のブラシのデータをセルに適用
-                        Undo.RecordObject(targetContext, "Paint Terrain Cell");
-                        targetContext.TerrainGrid.Set(cx, cy, cellPalette[selectedCellIndex]);
-                        EditorUtility.SetDirty(targetContext);
+                        //Undo.RecordObject(targetContext, "Paint Terrain Cell");
+                        //targetContext.TerrainGrid.Set(cx, cy, cellPalette[selectedCellIndex]);
+                        //EditorUtility.SetDirty(targetContext);
+                        terrainGridData.Set(cx, cy, cellPalette[selectedCellIndex]);
 
                         e.Use();
                     }
@@ -265,6 +276,7 @@ public class TerrainEditorWindow : EditorWindow
     private void SaveData()
     {
         if (targetContext == null) return;      // NULLチェック
+        targetContext.TerrainGrid = terrainGridData;
         EditorUtility.SetDirty(targetContext);  // unityに変更を通知する
         if (!EditorUtility.IsPersistent(targetContext)) // アセットではなくシーン上に存在する場合
         {
@@ -300,7 +312,7 @@ public class TerrainEditorWindow : EditorWindow
         }
 
         // 「Assets/」から始まる、自分のプロジェクト内のファイルのみ削除を許可
-        if (!string.IsNullOrEmpty(path) && path.StartsWith("Assets/"))
+        if (!string.IsNullOrEmpty(path) && path.StartsWith("Assets/breakable"))
         {
             if (AssetDatabase.DeleteAsset(path))
             {
@@ -329,7 +341,7 @@ public class TerrainEditorWindow : EditorWindow
 
         // プロジェクト内にアセット（.matファイル）として保存する
         // GenerateUniqueAssetPathを使うことで、同名ファイルがある場合は "NewMaterial 1.mat" のように自動で連番をつける
-        string assetPath = AssetDatabase.GenerateUniqueAssetPath("Assets/Materials/NewMaterial.mat");
+        string assetPath = AssetDatabase.GenerateUniqueAssetPath("Assets/Materials/Breakable/NewMaterial.mat");
         AssetDatabase.CreateAsset(newMaterial, assetPath);
         AssetDatabase.SaveAssets(); // アセットの変更をディスクに書き込む
 
@@ -340,14 +352,14 @@ public class TerrainEditorWindow : EditorWindow
         // 変更をマークして、Projectウィンドウ上で選択状態にする
         EditorUtility.SetDirty(renderer);
         AssetDatabase.SaveAssets();     // アセットの変更をディスクに書き込む
-        EditorGUIUtility.PingObject(newMaterial);
+        //EditorGUIUtility.PingObject(newMaterial);
     }
 
     // パレットの初期化
     /// <summary>
     // オブジェクトに記録されているTerrainContextに含まれるセルの情報を反映させる
     /// </summary>
-    private void InitPalette()
+    private void InitPaletteAndCellmap()
     {
         if (cellPalette.Count != 0)
             return;
@@ -392,7 +404,7 @@ public class TerrainEditorWindow : EditorWindow
     // --- 右側：テクスチャやシェーダーに渡すデータを表示、入力する
     private void DrawTextureData()
     {
-        EditorGUILayout.BeginVertical("box");
+        EditorGUILayout.BeginVertical("box",GUILayout.Width(260));
         GUILayout.Label("テクスチャ設定", EditorStyles.boldLabel);
         texture = (Texture)EditorGUILayout.ObjectField("Texture", texture, typeof(Texture), false, GUILayout.ExpandWidth(false));
         textureScale = EditorGUILayout.Vector2Field("TextureScale",textureScale, GUILayout.ExpandWidth(false));

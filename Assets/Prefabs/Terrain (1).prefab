@@ -88,16 +88,16 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -178,41 +178,41 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -273,16 +273,16 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -293,26 +293,26 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -373,11 +373,11 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -388,41 +388,41 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -463,21 +463,21 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -488,46 +488,46 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -563,41 +563,41 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -608,26 +608,26 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -663,11 +663,11 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -678,11 +678,11 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -693,11 +693,11 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -713,21 +713,21 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -758,11 +758,11 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -773,56 +773,56 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -858,76 +858,76 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -958,11 +958,11 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -973,26 +973,26 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -1008,16 +1008,16 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -1028,11 +1028,11 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -1053,51 +1053,51 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -1108,31 +1108,31 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -1153,66 +1153,66 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -1228,11 +1228,11 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -1258,36 +1258,36 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -1318,21 +1318,21 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -1363,16 +1363,16 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -1388,46 +1388,46 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -1468,11 +1468,11 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -1488,16 +1488,16 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -1518,16 +1518,16 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -1593,36 +1593,36 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-    - solid: 0
+      durability: 1
+      mass: 1
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -2186,7 +2186,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: edba3c492e805f645bb15c64290398e4, type: 2}
+  - {fileID: 2100000, guid: 2e81c2285aff46c4293d8ca4dffe2e03, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
