@@ -44,6 +44,11 @@ namespace Game.Terrain
         {
             _grid[Index(x, y)] = cell;
         }
+        public void Set(int idx,GridCell cell)
+        {
+            _grid[idx] = cell;
+        }
+
 
         // 指定したグリッド座標のセルを取得する
         public ref GridCell Get(int x, int y)
