@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 855a4ef36ae8fac4dabbcc341446605b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Terrain.TerrainContext
+  _terrainSetting: {fileID: 0}
   _terrainGrid:
     _grid:
     - solid: 0
@@ -58,3001 +59,3601 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
     _width: 20
     _height: 30
     _gridScale: 0.2
@@ -3186,7 +3787,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 32fee30eb60a7c1418b52e17d9b33f68, type: 2}
+  - {fileID: 2100000, guid: 2e81c2285aff46c4293d8ca4dffe2e03, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

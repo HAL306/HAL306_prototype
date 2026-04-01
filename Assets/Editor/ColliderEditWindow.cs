@@ -359,11 +359,15 @@ public class TerrainEditorWindow : EditorWindow
         }
 
         // 「Assets/」から始まる、自分のプロジェクト内のファイルのみ削除を許可
-        if (!string.IsNullOrEmpty(path) && path.StartsWith("Assets/breakable"))
+        if (!string.IsNullOrEmpty(path) && path.StartsWith("Assets/Materials/Breakable"))
         {
             if (AssetDatabase.DeleteAsset(path))
             {
                 Debug.Log($"{targetObject.name} にアタッチされていたマテリアルを削除しました。");
+            }
+            else
+            {
+                Debug.Log($"{targetObject.name} にアタッチされていたマテリアルを削除出来ませんでした。");
             }
         }
         else
