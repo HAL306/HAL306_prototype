@@ -1,5 +1,4 @@
-using System.Linq;
-using Unity.VisualScripting;
+﻿using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Game.Terrain
@@ -9,8 +8,9 @@ namespace Game.Terrain
     /// </summary>
     [RequireComponent (typeof(TerrainContext))]
     [RequireComponent (typeof(TerrainPolygon))]
-    public class DivisibleTerrain : MonoBehaviour
+    public class DestructibleTerrain : MonoBehaviour
     {
+        private TerrainSettings _terrainSettings;   // 地形の全体設定
         private TerrainContext _terrainContext;     // 地形情報
         private TerrainPolygon _terrainPolygon;     // 地形のポリゴンデータ
 
@@ -20,7 +20,13 @@ namespace Game.Terrain
             _terrainContext = GetComponent<TerrainContext>();
             _terrainPolygon = GetComponent<TerrainPolygon>();
         }
-        
+
+        private void Start()
+        {
+            _terrainSettings = GlobalGameSettings.Instance.TerrainSettings;
+        }
+
+
         public void Initialize(TerrainGridData terrainGrid)
         {
             if (_terrainContext == null) _terrainContext = GetComponent<TerrainContext>();
@@ -29,6 +35,38 @@ namespace Game.Terrain
             _terrainContext.TerrainGrid = terrainGrid;
         
             _terrainPolygon.OnGridChanged();
+        }
+
+        // 基本のダメージ処理
+        public void HitAttack(Vector2 center, float radius, float damage)
+        {
+            TerrainGridData terrainGrid = _terrainContext.TerrainGrid;
+            if (terrainGrid == null)
+                return;
+
+            // 全てのセルに対して当たり判定をとる
+            for (int y = 0; y < terrainGrid.Height; ++y)
+            {
+                for (int x = 0; x < terrainGrid.Width; ++x)
+                {
+                    if (terrainGrid.Get(x, y).solid == false)
+                        continue;
+
+                    // セルの中心のワールド座標を求める
+                    Vector2 cellCenter = new Vector2(x, y) * terrainGrid.GridScale;
+                    cellCenter = transform.TransformPoint(cellCenter);
+
+                    // セルに対するダメージ判定
+                    float dx = cellCenter.x - center.x;
+                    float dy = cellCenter.y - center.y;
+                    float sumRadius = terrainGrid.GridScale * 0.5f + radius;
+
+                    if (dx * dx + dy * dy <= sumRadius * sumRadius)
+                    {
+                        DamegeCell(x, y, damage);
+                    }
+                }
+            }
         }
 
         private void OnTriggerStay2D(Collider2D collider)
@@ -87,7 +125,7 @@ namespace Game.Terrain
             {
                 // 破壊エフェクト生成
                 Vector3 effectPos = transform.TransformPoint(new Vector3(x, y, 0.0f) * terrainGrid.GridScale);
-                Instantiate(_terrainContext.TerrainSetting.DestroyEffect, effectPos, Quaternion.identity);
+                Instantiate(_terrainSettings.DestroyEffect, effectPos, Quaternion.identity);
 
                 // 地形分離判定を行う
                 var splitResults = TerrainSplitDetector.Instance.RemoveAndCheckSplit(terrainGrid, x, y);
@@ -97,7 +135,7 @@ namespace Game.Terrain
                     // 分離判定結果ごとに地形を生成
                     foreach (SplitResult result in splitResults)
                     {
-                        DivisibleTerrain newChunk = Instantiate(this);
+                        DestructibleTerrain newChunk = Instantiate(this);
 
                         // 新しく生成された地形の位置補正
                         Vector3 localOffset = new Vector3(

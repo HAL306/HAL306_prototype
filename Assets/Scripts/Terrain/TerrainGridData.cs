@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Game.Terrain
 {
@@ -8,13 +8,12 @@ namespace Game.Terrain
     [System.Serializable]
     public class TerrainGridData
     {
-        // private変数を保存対象にする
-        [SerializeField] private GridCell[] _grid;   // グリッドデータ
+        [SerializeField] private GridCell[] _grid;      // グリッドデータ
 
-        [SerializeField] private int _width;        // グリッドの幅
-        [SerializeField] private int _height;       // グリッドの高さ
-        [SerializeField] float _gridScale;          // 1マスのサイズ
-        [SerializeField] int[] _visitedGen;         // 世代管理される探索済み記録用グリッド
+        [SerializeField] private int _width;            // グリッドの幅
+        [SerializeField] private int _height;           // グリッドの高さ
+        [SerializeField] float _gridScale;              // 1マスのサイズ
+        [SerializeField] private int[] _visitedGen;     // 世代管理される探索済み記録用グリッド
         [SerializeField] int[] _visitedId;
 
 

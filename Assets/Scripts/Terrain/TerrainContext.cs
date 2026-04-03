@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Game.Terrain
 {
@@ -8,14 +8,9 @@ namespace Game.Terrain
     /// </summary>
     public class TerrainContext : MonoBehaviour
     {
-        [SerializeField, Tooltip("地形の全体設定")]
-        private TerrainSetting _terrainSetting;
-
         [SerializeField]
         private TerrainGridData _terrainGrid;       // 地形データ
 
-
-        public TerrainSetting TerrainSetting => _terrainSetting;
 
         public TerrainGridData TerrainGrid
         {
