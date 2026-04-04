@@ -1,0 +1,13 @@
+# Unity関連のファイルのみUnityYAMLMergeを使用する
+*.unity merge=unityyamlmerge eol=lf
+*.prefab merge=unityyamlmerge eol=lf
+*.asset merge=unityyamlmerge eol=lf
+*.mat merge=unityyamlmerge eol=lf
+*.anim merge=unityyamlmerge eol=lf
+*.controller merge=unityyamlmerge eol=lf
+*.physicMaterial2D merge=unityyamlmerge eol=lf
+*.physicsMaterial merge=unityyamlmerge eol=lf
+*.overrideController merge=unityyamlmerge eol=lf
+
+# C#ファイルは通常のテキストとして扱い、UnityYAMLMergeに渡さない
+*.cs text diff merge
