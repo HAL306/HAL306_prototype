@@ -154,9 +154,10 @@ namespace Game.Terrain
                         }
 
                         // リジッドボディーの追加と現在の速度の維持
+                        Rigidbody2D newRb = null;
                         if (TryGetComponent<Rigidbody2D>(out var rb))
                         {
-                            if (newChunk.TryGetComponent<Rigidbody2D>(out var newRb))
+                            if (newChunk.TryGetComponent<Rigidbody2D>(out newRb))
                             {
                                 // 速度コピー
                                 newRb.linearVelocity = rb.linearVelocity;
@@ -168,7 +169,7 @@ namespace Game.Terrain
                             // 固定地形判定
                             if (!result.GridData.IsStatic())
                             {
-                                newChunk.AddComponent<Rigidbody2D>();
+                                newRb = newChunk.AddComponent<Rigidbody2D>();
                             }
                         }
 
@@ -176,6 +177,8 @@ namespace Game.Terrain
                         if (newChunk.TryGetComponent<PolygonCollider2D>(out var col)) col.pathCount = 0;
                         
                         newChunk.Initialize(result.GridData);
+                        if (newRb != null)
+                            newRb.mass = newChunk._terrainContext.TerrainGrid.GetSumMass();
                     }
 
                     Destroy(gameObject);

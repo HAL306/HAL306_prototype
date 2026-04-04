@@ -38,6 +38,10 @@ public class PlayerMove : MonoBehaviour
     [Range(0.0f, 100.0f)]
     public float _fallStartSpeed = 2.0f;
 
+    [SerializeField, Tooltip("最大落下速度")]
+    [Range(0.0f, 100.0f)]
+    public float _maxFallSpeed = 20.0f;
+
     [SerializeField, Tooltip("コヨーテタイム (地面から離れてからジャンプできる猶予時間)")]
     [Range(0.0f, 1.0f)]
     public float _coyoteTime = 0.1f;
@@ -63,9 +67,7 @@ public class PlayerMove : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        _moveInput = context.ReadValue<Vector2>();
-        Debug.Log(_moveInput);
-    }
+        _moveInput = context.ReadValue<Vector2>();    }
 
     public void OnJump(InputAction.CallbackContext context)
     {
@@ -189,6 +191,12 @@ public class PlayerMove : MonoBehaviour
             {
                 _currentVelicity.y -= _gravity * Time.deltaTime;
             }
+        }
+
+        // 落下速度上限
+        if (_currentVelicity.y < -_maxFallSpeed)
+        {
+            _currentVelicity.y = -_maxFallSpeed;
         }
     }
 
