@@ -54,10 +54,14 @@ public class PlayerBullet : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // 弾の当たり判定を調べる
         RaycastHit2D hit = CircleCast();
         if(hit)
         {
+            // ヒットエフェクト生成
             Instantiate(_hitEffect, hit.point, Quaternion.identity);
+
+            // ヒット時の座標を中心に発生する円形の範囲に当たったオブジェクトを取得
             Collider2D[] hitCollider = Physics2D.OverlapCircleAll(hit.point, _explodeRadius, _playerSettings.PlayerAttackHitLayer);
 
             foreach(Collider2D collider in hitCollider)
@@ -66,6 +70,7 @@ public class PlayerBullet : MonoBehaviour
 
                 if (terrain != null)
                 {
+                    // 地形に対するダメージ処理
                     terrain.HitAttack(hit.point, _explodeRadius, _explodePower);
                 }
             }
@@ -77,7 +82,7 @@ public class PlayerBullet : MonoBehaviour
         _lastCenterPosition = _circleCollider.bounds.center;
     }
 
-
+    // ショットの方向から初速を設定する
     public void SetShootDirection(Vector2 direction)
     {
         if (direction == Vector2.zero)
@@ -86,7 +91,7 @@ public class PlayerBullet : MonoBehaviour
         _rigidbody.linearVelocity = direction.normalized * _startSpeed;
     }
 
-
+    // 自身の移動範囲から円形の判定を行う
     private RaycastHit2D CircleCast()
     {
         Vector2 direction;      // サークルキャスト方向

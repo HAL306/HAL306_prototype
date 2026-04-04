@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 668e61f06db214842b4a2e8d0dd6ddd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerShooter
-  BulletPrefab: {fileID: 3054659608073192070, guid: 5d13db117b3821646beaa71ef971a46c, type: 3}
+  _bulletPrefab: {fileID: 3054659608073192070, guid: 5d13db117b3821646beaa71ef971a46c, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,6 +694,7 @@ MonoBehaviour:
   _groundAcceleration: 50
   _airAcceleration: 30
   _fallStartSpeed: 2
+  _maxFallSpeed: 20
   _coyoteTime: 0.1
 --- !u!114 &955628653
 MonoBehaviour:
@@ -849,7 +850,7 @@ MonoBehaviour:
     m_ActionId: 4b40b7ce-f555-43e2-9c54-0eac8b8ab9cd
     m_ActionName: 'Player/Shoot[/Mouse/leftButton,/SwitchProControllerHID/rightTrigger]'
   m_NeverAutoSwitchControlSchemes: 1
-  m_DefaultControlScheme: Gamepad
+  m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -10972,7 +10973,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091699868}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ce25713dd411ff4989c93be3af47315, type: 3}
   m_Name: 

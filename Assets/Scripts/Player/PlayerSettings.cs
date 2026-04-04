@@ -9,6 +9,9 @@ public class PlayerSettings : ScriptableObject
     [SerializeField, Tooltip("接地判定を取るレイヤー")]
     private LayerMask _groundLayer;
 
+    [SerializeField, Tooltip("プレイヤーの弾が当たるレイヤー (破壊できない地形を含む)")]
+    private LayerMask _playerBulletHitLayer;
+
     [SerializeField, Tooltip("プレイヤーの攻撃が当たるレイヤー")]
     private LayerMask _playerAttackHitLayer;
 
