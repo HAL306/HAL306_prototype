@@ -29,6 +29,7 @@ public class PlayerSettings : ScriptableObject
 
 
     public LayerMask GroundLayer => _groundLayer;
+    public LayerMask PlayerBulletHitLayer => _playerBulletHitLayer;
     public LayerMask PlayerAttackHitLayer => _playerAttackHitLayer;
     public float MaxSlopeAngle => _maxSlopeAngle;
     public float MinSlopeAngle => _minSlopeAngle;

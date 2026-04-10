@@ -1,4 +1,4 @@
-using Game.Terrain;
+﻿using Game.Terrain;
 using System.Collections.Generic;
 using System.IO;
 using UnityEditor;
@@ -320,7 +320,11 @@ public class TerrainEditorWindow : EditorWindow
 
         for(int i = 0; i < cellMap.Length; i++)
         {
-            grid.Set(i, cellPalette[cellMap[i]].cell);   // インデックスからグリッドデータに変える
+            // テスト用に仮でオフセット追加
+            GridCell cell = cellPalette[cellMap[i]].cell;
+            cell.offset = Vector2.zero;
+            Debug.Log(cell.offset);
+            grid.Set(i, cell);   // インデックスからグリッドデータに変える
         }
 
         targetContext.TerrainGrid = grid;

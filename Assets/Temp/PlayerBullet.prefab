@@ -108,8 +108,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerBullet
   _startSpeed: 50
   _explodePower: 1
-  _explodeRadius: 0.5
-  _shootInterval: 0.2
+  _explodeRadius: 1
+  _shootInterval: 1
   _hitEffect: {fileID: 4323657979379294987, guid: a9a7af1c88d802346a42cc8da0782dcb, type: 3}
 --- !u!58 &6348266639233754409
 CircleCollider2D:

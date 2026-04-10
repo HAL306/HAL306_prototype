@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSettings
   _groundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 768
+  _playerBulletHitLayer:
+    serializedVersion: 2
+    m_Bits: 768
   _playerAttackHitLayer:
     serializedVersion: 2
     m_Bits: 256

@@ -34,9 +34,10 @@ public class PlayerBullet : MonoBehaviour
 
     private Vector2 _lastCenterPosition;        // 前のフレームのコライダー中心座標
 
+    private static readonly float _lifeTime = 0.3f;     // 弾生存時間  
 
     public float ExplodePower => _explodePower;
-    public float ExplodeRadius => _explodeRadius;
+    public float ExplodeRadius { get { return _explodeRadius; } set { _explodeRadius = value; } }
     public float ShootInterval => _shootInterval;
     
 
@@ -50,6 +51,7 @@ public class PlayerBullet : MonoBehaviour
     {
         _playerSettings = GlobalGameSettings.Instance.PlayerSettings;
         _lastCenterPosition = _circleCollider.bounds.center;
+        Destroy(this.gameObject, _lifeTime);
     }
 
     private void FixedUpdate()
@@ -107,6 +109,6 @@ public class PlayerBullet : MonoBehaviour
         radius = _circleCollider.radius;
         radius *= Mathf.Max(Mathf.Abs(transform.lossyScale.x), Mathf.Abs(transform.lossyScale.y));
 
-        return Physics2D.CircleCast(_lastCenterPosition, radius, direction, distance, _playerSettings.PlayerAttackHitLayer);
+        return Physics2D.CircleCast(_lastCenterPosition, radius, direction, distance, _playerSettings.PlayerBulletHitLayer);
     }
 }

@@ -13,6 +13,7 @@ namespace Game.Terrain
         private TerrainSettings _terrainSettings;   // 地形の全体設定
         private TerrainContext _terrainContext;     // 地形情報
         private TerrainPolygon _terrainPolygon;     // 地形のポリゴンデータ
+        private Rigidbody2D _rigidbody;
 
 
         private void Awake()

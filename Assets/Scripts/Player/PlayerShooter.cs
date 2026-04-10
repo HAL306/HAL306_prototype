@@ -20,20 +20,13 @@ public class PlayerShooter : MonoBehaviour
 
     public void OnShoot(InputAction.CallbackContext context)
     {
+        ChangeDeviceMode(context);
         _inputShoot = context.performed;
     }
 
     public void OnAim(InputAction.CallbackContext context)
     {
-        if (context.control.device.layout == "Mouse")
-        {
-            _isMouseAim = true;
-        }
-        else
-        {
-            _isMouseAim = false;
-        }
-
+        ChangeDeviceMode(context);
         _inputAim = context.ReadValue<Vector2>();
     }
 
@@ -51,6 +44,19 @@ public class PlayerShooter : MonoBehaviour
         if(_inputShoot)
         {
             Shoot();
+        }
+    }
+
+    // エイム入力モードを自動的に切り替える
+    private void ChangeDeviceMode(InputAction.CallbackContext context)
+    {
+        if (context.control.device.layout == "Mouse")
+        {
+            _isMouseAim = true;
+        }
+        else
+        {
+            _isMouseAim = false;
         }
     }
 
