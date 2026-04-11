@@ -50,7 +50,7 @@ public class PlayerMove : MonoBehaviour
     private PlayerSettings _playerSettings;     // プレイヤーの全体設定
     private Rigidbody2D _rigidbody;
 
-    private Vector2 _moveInput;                 // 移動入力
+    private Vector2 _inputMove;                 // 移動入力
     private bool _inputJump;                    // ジャンプ入力
 
     private Vector2 _currentVelicity;           // 現在の移動速度
@@ -67,7 +67,8 @@ public class PlayerMove : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        _moveInput = context.ReadValue<Vector2>();    }
+        _inputMove = context.ReadValue<Vector2>();
+    }
 
     public void OnJump(InputAction.CallbackContext context)
     {
@@ -128,7 +129,7 @@ public class PlayerMove : MonoBehaviour
             tangentVelocity = Vector2.Dot(rightMoveDir, _currentVelicity);
 
             // 目標速度を求める
-            targetVelocity = _moveInput.x * _groundSpeed;
+            targetVelocity = _inputMove.x * _groundSpeed;
 
             if(_isLandingSlope)
             {
@@ -148,10 +149,19 @@ public class PlayerMove : MonoBehaviour
             float targetVelocity;       // 目標速度
 
             // 目標速度を求める
-            targetVelocity = _moveInput.x * _airSpeed;
+            targetVelocity = _inputMove.x * _airSpeed;
 
             // 移動速度を目標速度に近づける
             _currentVelicity.x = Mathf.MoveTowards(_currentVelicity.x, targetVelocity, _airAcceleration * Time.fixedDeltaTime);
+        }
+
+        if (_inputMove.x > 0.0f)
+        {
+            transform.eulerAngles = new Vector3(0.0f, 0.0f, 0.0f);
+        }
+        else if (_inputMove.x < 0.0f)
+        {
+            transform.eulerAngles = new Vector3(0.0f, 180.0f, 0.0f);
         }
     }
 
