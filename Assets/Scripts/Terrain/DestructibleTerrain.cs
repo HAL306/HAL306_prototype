@@ -68,6 +68,74 @@ namespace Game.Terrain
                     }
                 }
             }
+            
+            // 地形分離判定を行う
+            var splitResults = TerrainSplitDetector.Instance.ExecuteSplitCheck(terrainGrid);
+
+            if (splitResults.Count > 0)
+            {
+                // 分離判定結果ごとに地形を生成
+                foreach (SplitResult result in splitResults)
+                {
+                    DestructibleTerrain newChunk = Instantiate(this);
+
+                    // 新しく生成された地形の位置補正
+                    Vector3 localOffset = new Vector3(
+                        result.Offset.x * terrainGrid.GridScale,
+                        result.Offset.y * terrainGrid.GridScale,
+                        0.0f
+                    );
+                    newChunk.transform.position = this.transform.TransformPoint(localOffset);
+                    newChunk.transform.rotation = this.transform.rotation;
+
+                    // テクスチャのオフセットを補正
+                    if(newChunk.gameObject.TryGetComponent<MeshRenderer>(out var mr))
+                    {
+                        Vector2 offset = mr.material.GetVector("_TextureOffset");
+                        mr.material.SetVector("_TextureOffset", offset + (Vector2)localOffset);
+                    }
+
+                    // Rigidbodyの追加と現在の速度の維持
+                    Rigidbody2D newRb = null;
+                    if (TryGetComponent<Rigidbody2D>(out var rb))
+                    {
+                        if (newChunk.TryGetComponent<Rigidbody2D>(out newRb))
+                        {
+                            // 速度コピー
+                            newRb.linearVelocity = rb.linearVelocity;
+                            newRb.angularVelocity = rb.angularVelocity;
+                        }
+                    }
+                    else
+                    {
+                        // 固定地形判定
+                        if (!result.GridData.IsStatic())
+                        {
+                            newRb = newChunk.AddComponent<Rigidbody2D>();
+                        }
+                    }
+
+                    // 当たり判定初期化
+                    if (newChunk.TryGetComponent<PolygonCollider2D>(out var col)) col.pathCount = 0;
+                    
+                    newChunk.Initialize(result.GridData);
+                    if (newRb != null)
+                        newRb.mass = newChunk._terrainContext.TerrainGrid.GetSumMass();
+                }
+
+                Destroy(gameObject);
+            }
+            else
+            {
+                if (CheckIfEmpty(terrainGrid))
+                {
+                    Destroy(gameObject);
+                }
+                else
+                {
+                    _terrainPolygon.OnGridChanged();
+                }
+            }
         }
 
         private void OnTriggerStay2D(Collider2D collider)
@@ -128,73 +196,7 @@ namespace Game.Terrain
                 Vector3 effectPos = transform.TransformPoint(new Vector3(x, y, 0.0f) * terrainGrid.GridScale);
                 Instantiate(_terrainSettings.DestroyEffect, effectPos, Quaternion.identity);
 
-                // 地形分離判定を行う
-                var splitResults = TerrainSplitDetector.Instance.RemoveAndCheckSplit(terrainGrid, x, y);
-
-                if (splitResults.Count > 0)
-                {
-                    // 分離判定結果ごとに地形を生成
-                    foreach (SplitResult result in splitResults)
-                    {
-                        DestructibleTerrain newChunk = Instantiate(this);
-
-                        // 新しく生成された地形の位置補正
-                        Vector3 localOffset = new Vector3(
-                            result.Offset.x * terrainGrid.GridScale,
-                            result.Offset.y * terrainGrid.GridScale,
-                            0.0f
-                        );
-                        newChunk.transform.position = this.transform.TransformPoint(localOffset);
-                        newChunk.transform.rotation = this.transform.rotation;
-
-                        // テクスチャのオフセットを補正
-                        if(newChunk.gameObject.TryGetComponent<MeshRenderer>(out var mr))
-                        {
-                            Vector2 offset = mr.material.GetVector("_TextureOffset");
-                            mr.material.SetVector("_TextureOffset", offset + (Vector2)localOffset);
-                        }
-
-                        // リジッドボディーの追加と現在の速度の維持
-                        Rigidbody2D newRb = null;
-                        if (TryGetComponent<Rigidbody2D>(out var rb))
-                        {
-                            if (newChunk.TryGetComponent<Rigidbody2D>(out newRb))
-                            {
-                                // 速度コピー
-                                newRb.linearVelocity = rb.linearVelocity;
-                                newRb.angularVelocity = rb.angularVelocity;
-                            }
-                        }
-                        else
-                        {
-                            // 固定地形判定
-                            if (!result.GridData.IsStatic())
-                            {
-                                newRb = newChunk.AddComponent<Rigidbody2D>();
-                            }
-                        }
-
-                        // 当たり判定初期化
-                        if (newChunk.TryGetComponent<PolygonCollider2D>(out var col)) col.pathCount = 0;
-                        
-                        newChunk.Initialize(result.GridData);
-                        if (newRb != null)
-                            newRb.mass = newChunk._terrainContext.TerrainGrid.GetSumMass();
-                    }
-
-                    Destroy(gameObject);
-                }
-                else
-                {
-                    if (CheckIfEmpty(terrainGrid))
-                    {
-                        Destroy(gameObject);
-                    }
-                    else
-                    {
-                        _terrainPolygon.OnGridChanged();
-                    }
-                }
+                refCell.solid = false;
             }
         }
         
