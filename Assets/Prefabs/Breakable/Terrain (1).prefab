@@ -51,153 +51,159 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 855a4ef36ae8fac4dabbcc341446605b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Terrain.TerrainContext
-  _terrainSetting: {fileID: 0}
+  _terrainSetting: {fileID: 11400000, guid: 909c732b5fa028743881dca0bd23e039, type: 2}
   _terrainGrid:
     _grid:
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -216,11 +222,11 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -228,11 +234,11 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -240,83 +246,83 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -330,125 +336,113 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-      offset: {x: 0, y: 0}
-    - solid: 0
-      isStatic: 0
-      elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
-      offset: {x: 0, y: 0}
-    - solid: 0
-      isStatic: 0
-      elementType: 0
-      durability: 0
-      mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -456,29 +450,29 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -498,71 +492,71 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -588,11 +582,11 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -612,77 +606,71 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-      offset: {x: 0, y: 0}
-    - solid: 0
-      isStatic: 0
-      elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -690,11 +678,11 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -731,12 +719,6 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-      offset: {x: 0, y: 0}
-    - solid: 1
-      isStatic: 0
-      elementType: 0
-      durability: 1
-      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -756,11 +738,11 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -768,65 +750,65 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -858,17 +840,17 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -888,65 +870,65 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -978,11 +960,11 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -990,11 +972,11 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -1008,41 +990,41 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -1056,17 +1038,23 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
+      offset: {x: 0, y: 0}
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -1104,11 +1092,11 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -1122,69 +1110,33 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-      offset: {x: 0, y: 0}
-    - solid: 0
-      isStatic: 0
-      elementType: 0
-      durability: 0
-      mass: 0
-      offset: {x: 0, y: 0}
-    - solid: 0
-      isStatic: 0
-      elementType: 0
-      durability: 0
-      mass: 0
-      offset: {x: 0, y: 0}
-    - solid: 1
-      isStatic: 0
-      elementType: 0
-      durability: 1
-      mass: 1
-      offset: {x: 0, y: 0}
-    - solid: 1
-      isStatic: 0
-      elementType: 0
-      durability: 1
-      mass: 1
-      offset: {x: 0, y: 0}
-    - solid: 1
-      isStatic: 0
-      elementType: 0
-      durability: 1
-      mass: 1
-      offset: {x: 0, y: 0}
-    - solid: 1
-      isStatic: 0
-      elementType: 0
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
@@ -1212,11 +1164,11 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -1260,11 +1212,11 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -1295,24 +1247,12 @@ MonoBehaviour:
       elementType: 0
       durability: 1
       mass: 1
-      offset: {x: 0, y: 0}
-    - solid: 0
-      isStatic: 0
-      elementType: 0
-      durability: 0
-      mass: 0
-      offset: {x: 0, y: 0}
-    - solid: 0
-      isStatic: 0
-      elementType: 0
-      durability: 0
-      mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -1337,12 +1277,6 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-      offset: {x: 0, y: 0}
-    - solid: 1
-      isStatic: 0
-      elementType: 0
-      durability: 1
-      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -1368,11 +1302,11 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -1392,11 +1326,11 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 1
+    - solid: 0
       isStatic: 0
       elementType: 0
-      durability: 1
-      mass: 1
+      durability: 0
+      mass: 0
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -1416,23 +1350,23 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -1440,11 +1374,11 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -1469,12 +1403,6 @@ MonoBehaviour:
       elementType: 0
       durability: 1
       mass: 1
-      offset: {x: 0, y: 0}
-    - solid: 0
-      isStatic: 0
-      elementType: 0
-      durability: 0
-      mass: 0
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -1494,11 +1422,11 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -1529,18 +1457,12 @@ MonoBehaviour:
       elementType: 0
       durability: 1
       mass: 1
-      offset: {x: 0, y: 0}
-    - solid: 0
-      isStatic: 0
-      elementType: 0
-      durability: 0
-      mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -1602,11 +1524,11 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -1643,12 +1565,6 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
-      offset: {x: 0, y: 0}
-    - solid: 1
-      isStatic: 0
-      elementType: 0
-      durability: 1
-      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -1656,11 +1572,17 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
+      offset: {x: 0, y: 0}
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -1674,11 +1596,11 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -1686,11 +1608,11 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -1722,11 +1644,11 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -1758,11 +1680,11 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -1776,11 +1698,11 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -1794,17 +1716,17 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -1830,17 +1752,17 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -1872,35 +1794,35 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -1908,17 +1830,17 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -1950,11 +1872,11 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -1986,11 +1908,11 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -2004,23 +1926,23 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -2034,11 +1956,11 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -2046,23 +1968,23 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -2070,23 +1992,35 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -2117,30 +2051,18 @@ MonoBehaviour:
       elementType: 0
       durability: 1
       mass: 1
-      offset: {x: 0, y: 0}
-    - solid: 0
-      isStatic: 0
-      elementType: 0
-      durability: 0
-      mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
-      isStatic: 0
-      elementType: 0
-      durability: 0
-      mass: 0
-      offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -2154,11 +2076,11 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -2178,23 +2100,23 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -2202,11 +2124,11 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -2214,11 +2136,11 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -2238,23 +2160,23 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -2268,29 +2190,29 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -2304,11 +2226,11 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -2322,11 +2244,11 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -2334,11 +2256,11 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -2346,29 +2268,29 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -2382,11 +2304,11 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -2394,29 +2316,29 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -2460,24 +2382,42 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
-      offset: {x: 0, y: 0}
+      durability: 1
+      mass: 1
+      offset: {x: 0, y: 0}
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+      offset: {x: 0, y: 0}
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+      offset: {x: 0, y: 0}
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+      offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
       elementType: 0
@@ -2556,35 +2496,35 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -2645,12 +2585,6 @@ MonoBehaviour:
       elementType: 0
       durability: 1
       mass: 1
-      offset: {x: 0, y: 0}
-    - solid: 0
-      isStatic: 0
-      elementType: 0
-      durability: 0
-      mass: 0
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -2670,17 +2604,17 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -2688,29 +2622,29 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -2724,11 +2658,11 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -2790,17 +2724,17 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -2838,23 +2772,35 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
+      offset: {x: 0, y: 0}
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -2892,11 +2838,11 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -2916,23 +2862,23 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -2940,35 +2886,35 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -3054,35 +3000,35 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -3096,35 +3042,41 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
+      offset: {x: 0, y: 0}
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -3150,11 +3102,35 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
+      offset: {x: 0, y: 0}
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+      offset: {x: 0, y: 0}
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+      offset: {x: 0, y: 0}
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+      offset: {x: 0, y: 0}
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -3179,6 +3155,12 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -3203,6 +3185,12 @@ MonoBehaviour:
       elementType: 0
       durability: 1
       mass: 1
+      offset: {x: 0, y: 0}
+    - solid: 0
+      isStatic: 0
+      elementType: 0
+      durability: 0
+      mass: 0
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -3239,6 +3227,18 @@ MonoBehaviour:
       elementType: 0
       durability: 0
       mass: 0
+      offset: {x: 0, y: 0}
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
+      offset: {x: 0, y: 0}
+    - solid: 1
+      isStatic: 0
+      elementType: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 1
       isStatic: 0
@@ -3264,53 +3264,53 @@ MonoBehaviour:
       durability: 1
       mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -3318,29 +3318,29 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -3360,119 +3360,119 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     - solid: 0
       isStatic: 0
@@ -3486,173 +3486,173 @@ MonoBehaviour:
       durability: 0
       mass: 0
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
-    - solid: 0
+    - solid: 1
       isStatic: 0
       elementType: 0
-      durability: 0
-      mass: 0
+      durability: 1
+      mass: 1
       offset: {x: 0, y: 0}
     _width: 20
     _height: 30
@@ -3705,11 +3705,138 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 1}
-      - {x: -0.95105654, y: 0.30901697}
-      - {x: -0.5877852, y: -0.80901706}
-      - {x: 0.58778536, y: -0.80901694}
-      - {x: 0.9510565, y: 0.30901712}
+    - - {x: 0, y: -0.1}
+      - {x: 3.8, y: -0.1}
+      - {x: 3.9, y: 0}
+      - {x: 3.9, y: 5.8}
+      - {x: 3.8, y: 5.9}
+      - {x: 0, y: 5.9}
+      - {x: -0.1, y: 5.8}
+      - {x: -0.1, y: 0}
+    - - {x: 0.9, y: 0.2}
+      - {x: 0.9, y: 1}
+      - {x: 1.3, y: 1.6}
+      - {x: 1.1, y: 1.8000001}
+      - {x: 1.1, y: 2.6000001}
+      - {x: 0.70000005, y: 3}
+      - {x: 0.70000005, y: 3.4}
+      - {x: 0.3, y: 4}
+      - {x: 0.3, y: 4.4}
+      - {x: 0.6, y: 4.5}
+      - {x: 0.70000005, y: 4.2000003}
+      - {x: 1, y: 3.9}
+      - {x: 1.3, y: 4.2000003}
+      - {x: 1.3, y: 4.8}
+      - {x: 1.4, y: 4.9}
+      - {x: 2, y: 4.9}
+      - {x: 2.9, y: 4}
+      - {x: 2.9, y: 3.6000001}
+      - {x: 3.1, y: 3.4}
+      - {x: 3.1, y: 1}
+      - {x: 3, y: 0.9}
+      - {x: 2.8, y: 1.1}
+      - {x: 2.6000001, y: 0.9}
+      - {x: 2.2, y: 0.9}
+      - {x: 2.1, y: 0.8}
+      - {x: 2.4, y: 0.70000005}
+      - {x: 2.5, y: 0.6}
+      - {x: 2.4, y: 0.5}
+      - {x: 2.2, y: 0.5}
+      - {x: 1.6, y: 0.9}
+      - {x: 1.1, y: 0.6}
+      - {x: 1.1, y: 0.4}
+      - {x: 1.3, y: 0.2}
+      - {x: 1, y: 0.1}
+    - - {x: 2, y: 1.1}
+      - {x: 2.5, y: 1.2}
+      - {x: 2.3000002, y: 1.4}
+      - {x: 2.3000002, y: 1.6}
+      - {x: 2.2, y: 1.7}
+      - {x: 2.1, y: 1.6}
+      - {x: 1.9000001, y: 1.4}
+      - {x: 1.9000001, y: 1.2}
+    - - {x: 2.6000001, y: 1.3}
+      - {x: 2.5, y: 1.4}
+      - {x: 2.5, y: 2.4}
+      - {x: 2.2, y: 2.5}
+      - {x: 2, y: 2.3000002}
+      - {x: 1.9000001, y: 2.8}
+      - {x: 1.7, y: 3}
+      - {x: 1.8000001, y: 3.1}
+      - {x: 2, y: 3.1}
+      - {x: 2.2, y: 2.9}
+      - {x: 2.3000002, y: 3}
+      - {x: 2, y: 3.5}
+      - {x: 1.8000001, y: 3.5}
+      - {x: 1.3, y: 4}
+      - {x: 1.4, y: 4.1000004}
+      - {x: 1.6, y: 4.3}
+      - {x: 2.2, y: 4.3}
+      - {x: 2.3000002, y: 4}
+      - {x: 2.7, y: 3.8}
+      - {x: 2.7, y: 3.4}
+      - {x: 2.9, y: 3.2}
+      - {x: 2.9, y: 2}
+      - {x: 2.7, y: 1.8000001}
+      - {x: 2.7, y: 1.4}
+    - - {x: 0.5, y: 1.6}
+      - {x: 0.5, y: 2}
+      - {x: 0.3, y: 2.2}
+      - {x: 0.3, y: 3.2}
+      - {x: 0.4, y: 3.3000002}
+      - {x: 0.5, y: 3.2}
+      - {x: 0.5, y: 2.4}
+      - {x: 0.9, y: 1.8000001}
+      - {x: 0.6, y: 1.5}
+    - - {x: 1.6, y: 1.9000001}
+      - {x: 1.7, y: 2}
+      - {x: 1.6, y: 2.3000002}
+      - {x: 1.5, y: 2}
+    - - {x: 2.2, y: 2.1}
+      - {x: 2.3000002, y: 2.2}
+      - {x: 2.2, y: 2.3000002}
+      - {x: 2.1, y: 2.2}
+    - - {x: 1, y: 3.1}
+      - {x: 1.1, y: 3.6000001}
+      - {x: 1, y: 3.7}
+      - {x: 0.9, y: 3.6000001}
+      - {x: 0.9, y: 3.2}
+    - - {x: 1.4, y: 3.1}
+      - {x: 1.5, y: 3.6000001}
+      - {x: 1.4, y: 3.7}
+      - {x: 1.3, y: 3.6000001}
+      - {x: 1.3, y: 3.2}
+    - - {x: 3.3000002, y: 4.4}
+      - {x: 3.3000002, y: 4.6}
+      - {x: 3, y: 4.9}
+      - {x: 2.6000001, y: 4.9}
+      - {x: 2.3000002, y: 5.2000003}
+      - {x: 2.4, y: 5.3}
+      - {x: 2.6000001, y: 5.1000004}
+      - {x: 3.2, y: 5.1000004}
+      - {x: 3.5, y: 4.8}
+      - {x: 3.4, y: 4.3}
+    - - {x: 0.9, y: 4.6}
+      - {x: 0.70000005, y: 4.8}
+      - {x: 0.70000005, y: 5}
+      - {x: 1, y: 5.3}
+      - {x: 1.1, y: 5.2000003}
+      - {x: 1.1, y: 4.6}
+      - {x: 1, y: 4.5}
+    - - {x: 1.6, y: 4.5}
+      - {x: 2, y: 4.5}
+      - {x: 2.1, y: 4.6}
+      - {x: 2, y: 4.7}
+      - {x: 1.5, y: 4.6}
+    - - {x: 0.3, y: 5.2000003}
+      - {x: 0.6, y: 5.5}
+      - {x: 0.70000005, y: 5.4}
+      - {x: 0.4, y: 5.1000004}
+    - - {x: 1.5, y: 5.2000003}
+      - {x: 1.5, y: 5.4}
+      - {x: 2, y: 5.7}
+      - {x: 2.3000002, y: 5.6}
+      - {x: 1.6, y: 5.1000004}
   m_UseDelaunayMesh: 1
 --- !u!114 &2832488504780602531
 MonoBehaviour:
