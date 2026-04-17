@@ -15,7 +15,11 @@ namespace Game.Terrain
         private TerrainGridData _terrainGrid;       // 地形データ
 
 
-        public TerrainSetting TerrainSetting => _terrainSetting;
+        public TerrainSetting TerrainSetting
+        {
+            get { return _terrainSetting; }
+            set { _terrainSetting = value; }
+        }
 
         public TerrainGridData TerrainGrid
         {
