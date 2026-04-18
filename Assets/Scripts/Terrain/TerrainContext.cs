@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using static Unity.Cinemachine.CinemachineDecollider;
 
 namespace Game.Terrain
 {
@@ -11,12 +12,6 @@ namespace Game.Terrain
         [SerializeField]
         private TerrainGridData _terrainGrid;       // 地形データ
 
-
-        public TerrainSetting TerrainSetting
-        {
-            get { return _terrainSetting; }
-            set { _terrainSetting = value; }
-        }
 
         public TerrainGridData TerrainGrid
         {
