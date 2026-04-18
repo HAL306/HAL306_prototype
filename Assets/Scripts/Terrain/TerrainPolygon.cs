@@ -54,7 +54,24 @@ namespace Game.Terrain
             _rebuildFlag = true;
         }
 
+#if UNITY_EDITOR
+        public bool InitPolygon()
+#else
+        private bool InitPolygon()
+#endif
+        {
+            _terrainContext = GetComponent<TerrainContext>();
+            _polygonCollider2D = GetComponent<PolygonCollider2D>();
+            _meshRenderer = GetComponent<MeshRenderer>();
+            _meshFilter = GetComponent<MeshFilter>();
 
+            if(!RebuildPolygon())
+            {
+                return false;
+            }
+
+            return true;
+        }
         // ポリゴンを再構築する
         private bool RebuildPolygon()
         {
@@ -146,6 +163,7 @@ namespace Game.Terrain
             Mesh mesh = new Mesh();
             mesh.vertices = vertices;
             mesh.triangles = tess.Elements;
+
             _meshFilter.mesh = mesh;
 
             return true;
