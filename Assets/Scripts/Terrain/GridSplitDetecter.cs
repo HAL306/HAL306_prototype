@@ -27,6 +27,7 @@ namespace Game.Terrain
         private List<int>[] _cellsInChunk;
         private List<int> _mainChunkBuffer;
         private int[] _alias;
+        private List<List<int>> _componentBuffers;
 
         protected TerrainSplitDetector()
         {
@@ -36,11 +37,17 @@ namespace Game.Terrain
             _cellsInChunk = new List<int>[4];
             _alias = new int[4];
             _mainChunkBuffer = new List<int>(initialCapacity);
+            _componentBuffers = new List<List<int>>();
 
             for (int i = 0; i < 4; i++)
             {
                 _queues[i] = new Queue<int>(initialCapacity);
                 _cellsInChunk[i] = new List<int>(initialCapacity);
+            }
+
+            for (int i = 0; i < 8; i++)
+            {
+                _componentBuffers.Add(new List<int>(1024));
             }
         }
 
@@ -152,6 +159,85 @@ namespace Game.Terrain
             }
 
             return separatedChunks;
+        }
+        
+        public List<SplitResult> ExecuteSplitCheck(TerrainGridData grid)
+        {
+            List<SplitResult> separatedChunks = new List<SplitResult>();
+            GridCell[] rawCells = grid.RawCells;
+            int gridWidth = grid.Width;
+            int length = rawCells.Length;
+
+            if (++_currentGen == int.MaxValue)
+            {
+                Array.Clear(grid.VisitedGen, 0, grid.VisitedGen.Length);
+                _currentGen = 1;
+            }
+
+            int componentCount = 0;
+            Queue<int> queue = _queues[0];
+            queue.Clear();
+
+            // 全セルを走査し、繋がっている塊を調査
+            for (int i = 0; i < length; i++)
+            {
+                // 生きているセルで、未訪問の場合
+                if (rawCells[i].solid && grid.VisitedGen[i] != _currentGen)
+                {
+                    // バッファが足りなければ追加確保
+                    if (componentCount >= _componentBuffers.Count) _componentBuffers.Add(new List<int>(1024));
+                    
+                    List<int> currentComponent = _componentBuffers[componentCount];
+                    currentComponent.Clear();
+
+                    // BFS
+                    queue.Enqueue(i);
+                    grid.VisitedGen[i] = _currentGen;
+                    currentComponent.Add(i);
+
+                    while (queue.Count > 0)
+                    {
+                        int currIdx = queue.Dequeue();
+                        int cx = currIdx % gridWidth;
+                        int cy = currIdx / gridWidth;
+
+                        // 上下左右をチェックしてキューに入れる
+                        EnqueueIfConnected(currIdx - gridWidth, cx, cy - 1, grid, rawCells, queue, currentComponent);
+                        EnqueueIfConnected(currIdx + gridWidth, cx, cy + 1, grid, rawCells, queue, currentComponent);
+                        EnqueueIfConnected(currIdx - 1, cx - 1, cy, grid, rawCells, queue, currentComponent);
+                        EnqueueIfConnected(currIdx + 1, cx + 1, cy, grid, rawCells, queue, currentComponent);
+                    }
+
+                    componentCount++;
+                }
+            }
+
+            // 塊の数によって分離判定
+            if (componentCount >= 2)
+            {
+                // 分離していれば見つかった全ての塊を抽出してリストに追加
+                for (int i = 0; i < componentCount; i++)
+                {
+                    separatedChunks.Add(ExtractChunk(_componentBuffers[i], grid));
+                }
+            }
+            
+            // 離していなければ空リストを返す
+
+            return separatedChunks;
+        }
+        
+        private void EnqueueIfConnected(int nIdx, int nx, int ny, TerrainGridData grid, GridCell[] rawCells, Queue<int> queue, List<int> component)
+        {
+            if (!grid.InBounds(nx, ny)) return;
+            if (!rawCells[nIdx].solid) return;
+            
+            if (grid.VisitedGen[nIdx] != _currentGen)
+            {
+                grid.VisitedGen[nIdx] = _currentGen;
+                queue.Enqueue(nIdx);
+                component.Add(nIdx);
+            }
         }
 
         // 隣接セルの評価と他ルートとの衝突検知時のマージ処理
