@@ -64,6 +64,7 @@ public class PlayerMove : MonoBehaviour
     private float _coyoteTimer;                 // コヨーテタイム計測用タイマー
     private float _jumpBufferTimer;             // ジャンプ先行入力計測用タイマー
 
+    private float _rotateLockTimer;             // 向き固定時間計測用タイマー
 
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -76,6 +77,21 @@ public class PlayerMove : MonoBehaviour
         _jumpBufferTimer = _playerSettings.InputBufferDuration;
     }
 
+    // 向きを変更し一定時間固定する
+    public void RotateLock(bool isRight, float duration)
+    {
+        _rotateLockTimer = duration;
+
+        // 向き変更
+        if (isRight)
+        {
+            transform.eulerAngles = new Vector3(0.0f, 0.0f, 0.0f);
+        }
+        else
+        {
+            transform.eulerAngles = new Vector3(0.0f, 180.0f, 0.0f);
+        }
+    }
 
     private void Awake()
     {
@@ -155,13 +171,17 @@ public class PlayerMove : MonoBehaviour
             _currentVelicity.x = Mathf.MoveTowards(_currentVelicity.x, targetVelocity, _airAcceleration * Time.fixedDeltaTime);
         }
 
-        if (_inputMove.x > 0.0f)
+        // 向き変更
+        if (_rotateLockTimer <= 0.0f)
         {
-            transform.eulerAngles = new Vector3(0.0f, 0.0f, 0.0f);
-        }
-        else if (_inputMove.x < 0.0f)
-        {
-            transform.eulerAngles = new Vector3(0.0f, 180.0f, 0.0f);
+            if (_inputMove.x > 0.0f)
+            {
+                transform.eulerAngles = new Vector3(0.0f, 0.0f, 0.0f);
+            }
+            else if (_inputMove.x < 0.0f)
+            {
+                transform.eulerAngles = new Vector3(0.0f, 180.0f, 0.0f);
+            }
         }
     }
 
@@ -199,7 +219,7 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
-                _currentVelicity.y -= _gravity * Time.deltaTime;
+                _currentVelicity.y -= _gravity * Time.fixedDeltaTime;
             }
         }
 
@@ -234,6 +254,12 @@ public class PlayerMove : MonoBehaviour
         if (_jumpBufferTimer > 0.0f)
         {
             _jumpBufferTimer = Mathf.Max(0.0f, _jumpBufferTimer - delta);
+        }
+
+        // 向き固定タイマーの処理
+        if(_rotateLockTimer > 0.0f)
+        {
+            _rotateLockTimer = Mathf.Max(0.0f, _rotateLockTimer - delta);
         }
     }
 
