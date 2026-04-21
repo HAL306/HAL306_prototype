@@ -1,4 +1,5 @@
-using UnityEngine;
+﻿using UnityEngine;
+using static Unity.Cinemachine.CinemachineDecollider;
 
 namespace Game.Terrain
 {
@@ -8,18 +9,9 @@ namespace Game.Terrain
     /// </summary>
     public class TerrainContext : MonoBehaviour
     {
-        [SerializeField, Tooltip("地形の全体設定")]
-        private TerrainSetting _terrainSetting;
-
         [SerializeField]
         private TerrainGridData _terrainGrid;       // 地形データ
 
-
-        public TerrainSetting TerrainSetting
-        {
-            get { return _terrainSetting; }
-            set { _terrainSetting = value; }
-        }
 
         public TerrainGridData TerrainGrid
         {

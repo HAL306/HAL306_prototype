@@ -1,4 +1,4 @@
-using Game.Terrain;
+﻿using Game.Terrain;
 using System.Collections.Generic;
 using System.IO;
 using UnityEditor;
@@ -19,8 +19,6 @@ public class TerrainEditorWindow : EditorWindow
 {
     // 編集対象のテレインデータの参照
     private TerrainContext targetContext;
-
-    private TerrainSetting terrainSetting;
 
     // 実際に編集する仮データ
     // パレットのインデックスを格納する
@@ -103,7 +101,6 @@ public class TerrainEditorWindow : EditorWindow
         gridHeight = targetContext.TerrainGrid.Height;
         cellScale = targetContext.TerrainGrid.GridScale;
         cellMap = new int[gridWidth * gridHeight];
-        terrainSetting = targetContext.TerrainSetting;
 
         // ウィンドウを開いた時に初期パレットを用意する
         InitPaletteAndCellmap();
@@ -136,7 +133,6 @@ public class TerrainEditorWindow : EditorWindow
             // データの大きさを再設定
             cellMap = new int[gridWidth * gridHeight];
         }
-        terrainSetting = (TerrainSetting)EditorGUILayout.ObjectField("TerrainSetting", terrainSetting, typeof(TerrainSetting), false);
         EditorGUILayout.EndHorizontal();
     }
 
@@ -424,17 +420,14 @@ public class TerrainEditorWindow : EditorWindow
 
         for(int i = 0; i < cellMap.Length; i++)
         {
-            grid.Set(i, cellPalette[cellMap[i]].cell);   // インデックスからグリッドデータに変える
+            // テスト用に仮でオフセット追加
+            GridCell cell = cellPalette[cellMap[i]].cell;
+            cell.offset = Vector2.zero;
+            Debug.Log(cell.offset);
+            grid.Set(i, cell);   // インデックスからグリッドデータに変える
         }
 
         targetContext.TerrainGrid = grid;
-
-        if(terrainSetting == null)
-        {
-            Debug.LogWarning("terrainSettingが選択されていません。");
-            return;
-        }
-        targetContext.TerrainSetting = terrainSetting;
 
         if (PrefabUtility.IsPartOfPrefabInstance(targetContext))
         {

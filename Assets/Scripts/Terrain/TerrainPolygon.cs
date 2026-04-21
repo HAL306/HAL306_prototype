@@ -1,4 +1,4 @@
-using LibTessDotNet;
+﻿using LibTessDotNet;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,6 +13,7 @@ namespace Game.Terrain
     [RequireComponent (typeof(MeshFilter))]
     public class TerrainPolygon : MonoBehaviour
     {
+        private TerrainSettings _terrainSettings;           // 地形の全体設定
         private TerrainContext _terrainContext;             // 地形情報
         private PolygonCollider2D _polygonCollider2D;       // コライダーコンポーネント
         private MeshRenderer _meshRenderer;                 // レンダラーコンポーネント
@@ -31,6 +32,7 @@ namespace Game.Terrain
 
         private void Start()
         {
+            _terrainSettings = GlobalGameSettings.Instance.TerrainSettings;
             RebuildPolygon();
         }
 
@@ -105,7 +107,7 @@ namespace Game.Terrain
                 List<Vector2> colliderPath = edgeLoops[i].edgePoints;
 
                 // エッジループ簡略化
-                float epsilon = _terrainContext.TerrainSetting.ColliderEpsilon * terrainGrid.GridScale;
+                float epsilon = _terrainSettings.ColliderEpsilon * terrainGrid.GridScale;
                 colliderPath = RamerDouglasPeucker.RamerDouglasPeuckerAlgorithm(colliderPath, epsilon);
 
                 // コライダー形状を更新
@@ -129,7 +131,7 @@ namespace Game.Terrain
                 List<Vector2> renderMeshPath = edgeLoops[i].edgePoints;
 
                 // エッジループ簡略化
-                float epsilon = _terrainContext.TerrainSetting.RendererEpsilon * terrainGrid.GridScale;
+                float epsilon = _terrainSettings.RendererEpsilon * terrainGrid.GridScale;
                 renderMeshPath = RamerDouglasPeucker.RamerDouglasPeuckerAlgorithm(renderMeshPath, epsilon);
 
                 // 回転方向を取得
